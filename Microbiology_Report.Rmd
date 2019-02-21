@@ -46,7 +46,7 @@ colony_data %>%
   filter(student_name == "Isabella_Finney") %>%
 ggplot(aes(x = location_name_or_control,
            y = number_of_colonies_total,
-           color = "babyblue")) +
+           fill = location_name_or_control)) +
   geom_boxplot() +
   geom_point() +
   ggtitle("Count of colonies from different locations, 1x dilution") +
