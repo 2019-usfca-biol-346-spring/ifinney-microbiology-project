@@ -1,6 +1,6 @@
 ---
 title: 'Your Title Here'
-author: "Don Francisco"
+author: "Isabella Finney"
 date: "February 14, 2019"
 output: word_document
 csl: american-society-for-microbiology.csl
@@ -26,14 +26,47 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r load-packages-and-data}
 # load packages as needed
 library("dplyr")
+library("ggplot2")
+library("ggthemes")
+library("RColorBrewer")
+library("broom")
+library("tidyr")
 
-# load data produced from analysis scripts using
-# something like load("output/processed_data.Rdata")
+# Read in csv file with data
+colony_data <- read.csv(
+  paste0("data/raw_data/",
+         "2019-02-05_dilution_plating_colony_and_morphotype_counts ",
+         "- Sheet1.csv"))
 ```
 
-```{r your-code-here}
-# Add code chunks as needed for your analyses
+```{r colony-counts-histogram}
+#make a histogram of colony counts
+colony_data %>%
+  filter(dilution_1_10_100 == 1) %>%
+  filter(student_name == "Isabella_Finney") %>%
+ggplot(aes(x = location_name_or_control,
+           y = number_of_colonies_total,
+           color = "babyblue")) +
+  geom_boxplot() +
+  geom_point() +
+  ggtitle("Count of colonies from different locations, 1x dilution") +
+  xlab("Plant Name") +
+  ylab("Number of colonies")
+
+# Do a statistical test to determine if there are differences
+# in the number of colonies based on gym location
+colony_data %>%
+  filter(dilution_1_10_100 == 1) %>%
+  filter(student_name == "Isabella_Finney") %>%
+  lm(number_of_colonies_total ~ location_name_or_control,
+     data = .) %>%
+  anova()
+  broom::tidy() %>%
+  knitr::kable(digits = 2)
+# ANOVA GAVE P=0.3372--> NOT STATISTICALLY SIGNIFICANT
 ```
+
+**Figure 1:** 
 
 # Discussion
 
