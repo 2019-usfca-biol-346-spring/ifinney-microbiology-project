@@ -54,7 +54,7 @@ ggplot(aes(x = location_name_or_control,
   ylab("Number of colonies")
 
 # Do a statistical test to determine if there are differences
-# in the number of colonies based on gym location
+# in the number of colonies based on plants
 colony_data %>%
   filter(dilution_1_10_100 == 1) %>%
   filter(student_name == "Isabella_Finney") %>%
@@ -67,6 +67,35 @@ colony_data %>%
 ```
 
 **Figure 1:** 
+
+```{r mophology-counts-histogram}
+# make a histogram of morphology counts
+colony_data %>%
+  filter(dilution_1_10_100 == 1) %>%
+  filter(student_name == "Isabella_Finney") %>%
+ggplot(aes(x = location_name_or_control,
+           y = number_of_morphotypes_total,
+           fill = location_name_or_control)) +
+  geom_boxplot() +
+  geom_point() +
+  ggtitle("Count of morphotypes from different locations, 1x dilution") +
+  xlab("Plant Name") +
+  ylab("Number of morpholotypes")
+
+# Do a statistical test to determine if there are differences
+# in the number of morphologies based on plants
+colony_data %>%
+  filter(dilution_1_10_100 == 1) %>%
+  filter(student_name == "Isabella_Finney") %>%
+  lm(number_of_morphotypes_total ~ location_name_or_control,
+     data = .) %>%
+  anova()
+  broom::tidy() %>%
+  knitr::kable(digits = 2)
+# ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
+```
+
+**Figure 2:** 
 
 # Discussion
 
