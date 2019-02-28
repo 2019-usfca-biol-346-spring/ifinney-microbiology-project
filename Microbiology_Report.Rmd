@@ -21,7 +21,9 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Results
 
-## Subsections are ok in the results section too
+## Colony Counts
+
+## Morphotypes Detected
 
 ```{r load-packages-and-data}
 # load packages as needed
@@ -66,7 +68,7 @@ colony_data %>%
 # ANOVA GAVE P=0.3372--> NOT STATISTICALLY SIGNIFICANT
 ```
 
-**Figure 1:** 
+**Figure 1:** Number of colonies per plant sample and control at 1x dilution. 
 
 ```{r mophology-counts-histogram}
 # make a histogram of morphology counts
@@ -80,7 +82,7 @@ ggplot(aes(x = location_name_or_control,
   geom_point() +
   ggtitle("Count of morphotypes from different locations, 1x dilution") +
   xlab("Plant Name") +
-  ylab("Number of morpholotypes")
+  ylab("Number of morphotypes")
 
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plants
@@ -95,7 +97,7 @@ colony_data %>%
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
 ```
 
-**Figure 2:** 
+**Figure 2:** Count of different morphotypes present per plant sample and control at 1x dilution. 
 
 # Discussion
 
