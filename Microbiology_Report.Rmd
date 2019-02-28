@@ -1,5 +1,5 @@
 ---
-title: 'Your Title Here'
+title: 'Exploring the Microbiome in Native and Non-Native Plant at the University of San Francisco Lone Mountain Campus'
 author: "Isabella Finney"
 date: "February 14, 2019"
 output: word_document
@@ -12,10 +12,20 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Introduction
+Classifying plants as standalone entities is inaccurate because they host a diverse array of microorganisms that are essential to their major functions [@nihorimbere2011beneficial]. Although microbes are fundamental to plant maintenance, little is known about the exact microbial communities inhabiting different plants species around the world and their impact on plants’ ecological function. In addition, the leaf microbiome, or phyllosphere microbiome, is influenced by abiotic and biotic factors that make this dynamic relationship harder to understand [@copeland2015seasonal]. Leaves are a huge contributor to a plant’s system and it is estimated that about 6.4 × 108 km2  microbes can colonize a leaf’s surface area [@morris2002fifty].  Culture-based and molecular techniques have helped biologists examine isolated microbes in greater detail. These techniques can be applied to examining the phyllosphere and its vast array of microbial communities. Thus far, many different genera of bacteria, fungi, yeasts, and algae have been identified through research [@andrews2000ecology].
+
+The focus on my investigation was to examine differences in the colonies and morphotypes present on two plants growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. The two plants I examined were the ice plant (*Carpobrotus edulis*) and fern-leaf yarrow (*Achillea filipendulina*). I chose these particular plants because of their differing plant structure and environmental status. Fern-leaf yarrow are bright, yellow flowering plants and ice-plant is a succulent with a very low percentage of flowers present. Plant-pollinator relationships are highly important to plant biodiversity and in particular, about 90% of all flowering plants rely on animals for pollination [@ollerton2011many]. In Northern California, fern-leaf yarrows are naturalized plants and ice plant is considered an invasive species. Plant invasions are known to pose serious threats to native and naturalized plant communities by robbing natural resources and reducing overall biodiversity [@foxcroft2013bottom]. Due to the structural diversity and environmental impact between these plant species types, I hypothesized that there would be a greater morphotype diversity and higher colony counts present on the leaves of fern-leaf yarrows because of the higher interactions with pollinating insects and its proximity to an invasive plant species requires more microbes to protect and enhance its fitness against the invasive threat. To test this plant-microbiome relationship, I conducted culture-based techniques from samples obtained on the leaves of each plant species. I grew cultures on tryptic soy agar (TSA) plates at three different dilutions. I found both colony and morphotype counts to be larger in fern-leaf yarrow leaves but there was only a statistical significance between the morphotype counts of each plant. 
+
 
 # Methods
 
 ## Study design
+
+### Field Collection
+On January 31st, 2019, I sampled leaves from a fern-leaf yarrow and an ice plant located at the Lone Mountain campus of the University of San Francisco in San Francisco, California (37.776$^\circ$N, 122.4506$^\circ$W). For each plant, I collected samples from 3 different leaves which were located at 3 different elevations from the soil to the tip of the plant. I used a new, sterile cotton swab on each leaf for approximately 10 seconds and then I proceeded to place each swab into a labeled tube filled with 1mL of PBS solution. To obtain the control for my experiment, I used sterile swabs to collect 3 air samples from the area where the plants were located. I exposed each swab to the air for approximately 10 seconds and placed each swab into a labeled tube filled with 1mL of PBS solution. I kept each sample swab in its respective tube for approximately an hour and a half before removing it for culturing. 
+
+### Culturing and Dilution Plating 
+I used 100mm tryptic soy agar (TSA) plates for plating the three sample treatments I collected. For each tube, I transferred 50 µL into a new sterile tube and added 450 µL of PBS solution to create a 10x dilution sample. I created a 100x dilution sample by transferring 50 µL from the 10x dilution and adding 450 µL of PBS solution. For each sample collected at each plant type and control, I used 27 TSA plates. Each TSA plate was covered with its respective PBS and sample solution mix at a concentration of either 1, 10, or 100. Each TSA was labeled with my name, date (01/31/19), sample replicate abbreviation (ICE, YARR, CON), and concentration (1x, 10x, 100x). I placed these plates inside an incubator at 37$^\circ$C for a weak to allow colonies to grow. On February 5, 2019, I removed all of the plates from the incubator in order to examine colonial morphology and counts. I distinguished morphotypes based on color, pigmentation, shape, colony margin, and elevation. Any additional features or anomalies such as distinctively emitted smells were noted as well. To count the number of colonies per plate, I used a Sharpie pen to mark each counted colony as to avoid miscounting.
 
 ## Analysis
 
@@ -23,7 +33,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## Colony Counts
 
-## Morphotypes Detected
+## Detecting Morphotypes
 
 ```{r load-packages-and-data}
 # load packages as needed
