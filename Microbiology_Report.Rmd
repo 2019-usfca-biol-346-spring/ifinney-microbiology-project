@@ -27,7 +27,8 @@ On January 31st, 2019, I sampled leaves from a fern-leaf yarrow and an ice plant
 ### Culturing and Dilution Plating 
 I used 100mm tryptic soy agar (TSA) plates for plating the three sample treatments I collected. For each tube, I transferred 50 µL into a new sterile tube and added 450 µL of PBS solution to create a 10x dilution sample. I created a 100x dilution sample by transferring 50 µL from the 10x dilution and adding 450 µL of PBS solution. For each sample collected at each plant type and control, I used 27 TSA plates. Each TSA plate was covered with its respective PBS and sample solution mix at a concentration of either 1, 10, or 100. Each TSA was labeled with my name, date (01/31/19), sample replicate abbreviation (ICE, YARR, CON), and concentration (1x, 10x, 100x). I placed these plates inside an incubator at 37$^\circ$C for a weak to allow colonies to grow. On February 5, 2019, I removed all of the plates from the incubator in order to examine colonial morphology and counts. I distinguished morphotypes based on color, pigmentation, shape, colony margin, and elevation. Any additional features or anomalies such as distinctively emitted smells were noted as well. To count the number of colonies per plate, I used a Sharpie pen to mark each counted colony as to avoid miscounting.
 
-## Analysis
+## Computational Analysis
+The process to analyze the data gathered was accomplished using a systematic workflow. First, I created and uploaded data onto a Google Sheet. I added data about the number of different colonies and morphotypes counted per TSA plate at each concentration for each sample treatment. This sheet was then converted and exported as a csv file to the raw data project file folder. Using R and RStudio, I uploaded my project and added various software packages such as dplyr and ggplot2 to a Rmd file. I used the csv data file and appropriate packages I added to create the figures for my analysis. 
 
 # Results
 
