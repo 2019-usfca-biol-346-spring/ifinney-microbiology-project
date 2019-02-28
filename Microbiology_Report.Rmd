@@ -33,10 +33,10 @@ The process to analyze the data gathered was accomplished using a systematic wor
 # Results
 
 ## Colony Counts
-The first thing I investigated was the number of colonies present for each sample treatment at the original concentration (1x). Looking at each sample, I noticed that, qualitatively, the average number of colonies found on the leave of fern-leaf yarrow plants is larger than the average colony count found on the ice plants (Figure 1; t-test, p < 0. 3372). 
+The first thing I investigated was the number of colonies present for each sample treatment at the original concentration (1x). Looking at each sample, I noticed that, qualitatively, the average number of colonies found on the leave of fern-leaf yarrow plants is larger than the average colony count found on the ice plants (Figure 1; ANOVA, p = 0. 3372). 
 
 ## Detecting Morphotypes
-Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 1; t-test p < 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
+Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 1; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
 
 ```{r load-packages-and-data}
 # load packages as needed
