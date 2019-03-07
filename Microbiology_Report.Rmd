@@ -1,5 +1,5 @@
 ---
-title: 'Exploring the Microbiome in Native and Non-Native Plant at the University of San Francisco Lone Mountain Campus'
+title: 'Exploring the Microbiome in Native and Non-Native Plants at the University of San Francisco Lone Mountain Campus'
 author: "Isabella Finney"
 date: "February 14, 2019"
 output: word_document
