@@ -25,15 +25,15 @@ The focus on my investigation was to examine differences in the colonies and mor
 On January 31st, 2019, I sampled leaves from a fern-leaf yarrow and an ice plant located at the Lone Mountain campus of the University of San Francisco in San Francisco, California (37.776$^\circ$N, 122.4506$^\circ$W). For each plant, I collected samples from 3 different leaves which were located at 3 different elevations from the soil to the tip of the plant. I used a new, sterile cotton swab on each leaf for approximately 10 seconds and then I proceeded to place each swab into a labeled tube filled with 1mL of PBS solution. To obtain the control for my experiment, I used sterile swabs to collect 3 air samples from the area where the plants were located. I exposed each swab to the air for approximately 10 seconds and placed each swab into a labeled tube filled with 1mL of PBS solution. I kept each sample swab in its respective tube for approximately an hour and a half before removing it for culturing. 
 
 ### Culturing and Dilution Plating 
-I used 100mm tryptic soy agar (TSA) plates for plating the three sample treatments I collected. I first vortexed each test tube for approximately 10 seconds in order to release remaining microbes from the cotton swab and into the PBS solution. For each tube, I transferred 50 µL into a new sterile tube and added 450 µL of PBS solution to create a 10x dilution sample. I created a 100x dilution sample by transferring 50 µL from the 10x dilution and adding 450 µL of PBS solution. For each sample collected at each plant type and control, I used 27 TSA plates. Each TSA plate was covered with its respective PBS and sample solution mix at a concentration of either 1, 10, or 100. I spread the bacterial liquid onto each TSA plate by swirling approximately 6-8 glass beads until the plate was completely covered. The glass beads were removed and appropriately disposed of. Each TSA was labeled with my name, date (01/31/19), sample replicate abbreviation (ICE, YARR, CON), and concentration (1x, 10x, 100x). I placed these plates inside an incubator at 37$^\circ$C for a weak to allow colonies to grow. On February 5, 2019, I removed all of the plates from the incubator in order to examine colonial morphology and counts. I distinguished morphotypes based on color, pigmentation, shape, colony margin, and elevation. Any additional features or anomalies such as distinctively emitted smells were noted as well. To count the number of colonies per plate, I used a Sharpie pen to mark each counted colony as to avoid miscounting.
+I used 100mm tryptic soy agar (TSA) plates for plating the three sample treatments I collected. I first vortexed each test tube for approximately 10 seconds in order to release remaining microbes from the cotton swab and into the PBS solution. For each tube, I transferred 50 µL into a new sterile tube and added 450 µL of PBS solution to create a 10x dilution sample. I created a 100x dilution sample by transferring 50 µL from the 10x dilution and adding 450 µL of PBS solution. For each sample collected at each plant type and control, I used 27 TSA plates. Each TSA plate was covered with its respective PBS and sample solution mix at a concentration of either 1, 10, or 100. I spread the bacterial liquid onto each TSA plate by swirling approximately 6-8 glass beads until the plate was completely covered. The glass beads were removed and appropriately disposed of. I placed these plates inside an incubator at 37$^\circ$C for a weak to allow colonies to grow. On February 5, 2019, I removed all of the plates from the incubator in order to examine colonial morphology and counts. I distinguished morphotypes based on color, pigmentation, shape, colony margin, and elevation. Any additional features or anomalies such as distinctively emitted smells were noted as well. To count the number of colonies per plate, I used a Sharpie pen to mark each counted colony as to avoid miscounting.
 
 ## Computational Analysis
-The process to analyze the data gathered was accomplished using a systematic workflow. First, I created and uploaded data onto a Google Sheet. I added data about the number of different colonies and morphotypes counted per TSA plate at each concentration for each sample treatment. This sheet was then converted and exported as a csv file to the raw data project file folder. Using R and RStudio, I uploaded my project and added various software packages such as dplyr and ggplot2 to a Rmd file. I used the csv data file and appropriate packages I added to create the figures for my analysis and performed an ANOVA analysis for statistical testing. 
+The process to analyze the data gathered was accomplished using a systematic workflow. First, I created and uploaded data onto a Google Sheet. I added data about the number of different colonies and morphotypes counted per TSA plate at each concentration for each sample treatment. This sheet was then converted and exported as a csv file to the raw data project file folder. Using the R language and RStudio, I uploaded my project and added various software packages such as dplyr and ggplot2 to a Rmd file. I used the csv data file and appropriate packages I added to create the figures for my analysis. I also performed ANOVA analyses on both colony and morphology counts.  
 
 # Results
 
 ## Colony Counts
-The first thing I investigated was the number of colonies present for each sample treatment at the original concentration (1x). Looking at each sample, I noticed that, qualitatively, the average number of colonies found on the leave of fern-leaf yarrow plants is larger than the average colony count found on the ice plants (Figure 1; ANOVA, p = 0. 3372). 
+The first thing I investigated was the number of colonies present for each sample treatment at the original concentration (1x). Looking at each sample, I observed that, qualitatively, the number of colonies found on the leaves of fern-leaf yarrow plants is larger than the number of colonies found on the leaves of ice plants but I found no statistical significance (Figure 1; ANOVA, p = 0. 3372). 
 
 ## Detecting Morphotypes
 Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 2; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
@@ -67,7 +67,11 @@ ggplot(aes(x = location_name_or_control,
   ggtitle("Count of colonies from different locations, 1x dilution") +
   xlab("Plant Name") +
   ylab("Number of colonies")
+```
 
+**Figure 1:** Number of colonies per sample treatment and control at 1x dilution.
+
+```{r colony-counts-statistics}
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants
 colony_data %>%
@@ -80,8 +84,6 @@ colony_data %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P=0.3372--> NOT STATISTICALLY SIGNIFICANT
 ```
-
-**Figure 1:** Number of colonies per sample treatment and control at 1x dilution. 
 
 ```{r mophology-counts-histogram}
 # make a histogram of morphology counts
@@ -96,7 +98,11 @@ ggplot(aes(x = location_name_or_control,
   ggtitle("Count of morphotypes from different locations, 1x dilution") +
   xlab("Plant Name") +
   ylab("Number of morphotypes")
+```
 
+**Figure 2:** Count of different morphotypes present per sample treatment and control at 1x dilution. 
+
+```{r morphology-counts-statistics}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plants
 colony_data %>%
@@ -110,9 +116,9 @@ colony_data %>%
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
 ```
 
-**Figure 2:** Count of different morphotypes present per sample treatment and control at 1x dilution. 
-
 # Discussion
-The focus of my investigation was to determine whether differences in the colonies and morphotypes present on a fern-leaf yarrow plant and ice plant growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. I hypothesized that the fern-leaf yarrow plant would have higher colony counts and morphotype diversity than the ice plant. The result of this experiment suggests that the plant structure and naturalized status allow fern-leaf yarrows to have greater morphology diversity. Although qualitatively fern-leaf yarrows exhibited higher colony counts, there was no statistical difference between the mean counts of the two plants. Some limitations and caveats of the study that are important to mention are the weather on my collection day the type of solution for culturing. There were rain showers the night and morning before I collected my samples which could have potentially added or removed microbes and reduced the amount pollinator visits to each plant type. In addition, I used TSA plates to grow the microbes which may have negatively impacted the morphotypes I observed. My observations may be based on only a subset of microorganisms because tryptic soy agar is an ideal media for bacterial growth, not fungi or plant microbes that are very common in plant species. 
+The focus of my investigation was to determine whether differences in the colonies and morphotypes present on a fern-leaf yarrow plant and ice plant growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. I hypothesized that the fern-leaf yarrow plant would have higher colony counts and morphotype diversity than the ice plant. The result of this experiment suggests that the plant structure and naturalized status allow fern-leaf yarrows to have greater morphology diversity. Although, qualitatively, fern-leaf yarrows exhibited higher colony counts, there was no statistical difference between the mean counts of the two plants. Some limitations and caveats of the study that are important to mention are the weather on my day of collection and the type of media I used for culturing. There were rain showers the night and morning before I collected my samples which could have potentially added or removed microbes and reduced the amount pollinator visits to each plant type. In addition, I used TSA plates to grow the microbes which may have negatively impacted the morphotypes I observed. My observations may be based on only a subset of microorganisms because tryptic soy agar is an ideal media for bacterial growth, not fungi or plant microbes that are very common in plant species. 
+
+Differences in performance among plant species can greatly impact ecosystem function so studying the plant microbiome is of great importance. Invasive plant species, like ice plants, are often able to invade and persist in their environment due to their ability in altering soil chemistry and nutrient cycling through the microbes that accompany them [@vila2011ecological]. This can lead to the decline in species diversity among native and naturalized plants in their respective environment. To try and combat this depletion in resources, native and naturalized plants such as the fern-leaf yarrow may recruit more beneficial microbes that can aid in tolerance or defense from varying environmental stresses. In addition, scientists argue that invasive plants can be released from attack by natural enemies, like fungal and viral pathogens [@mitchell2003release]. This may have contributed to the differences I observed in the number of morphotypes present on each plant species. Understanding the microbial impact of invasive species on native and naturalized plants and their ecosystem can be an effective tool in restoring habitats that have been negatively impacted by introduction these invasive plants.
 
 # Sources Cited
