@@ -136,7 +136,7 @@ microscopy_data %>%
             sd_length = sd(Cell_length),
             mean_width = mean(Cell_width),
             mena_area = mean(Cell_area),
-            sd_area = sd(Cell_area))
+            sd_area = sd(Cell_area)) %>%
  knitr::kable(digits = 2,
                 col_names = c("MOTU ID",
                               "Mean cell length (µm)",
