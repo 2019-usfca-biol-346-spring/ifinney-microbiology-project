@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introduction
 Classifying plants as standalone entities is inaccurate because they host a diverse array of microorganisms that are essential to their major functions [@nihorimbere2011beneficial]. Although microbes are fundamental to plant maintenance, little is known about the exact microbial communities inhabiting different plants species around the world and their impact on plants’ ecological function. In addition, the leaf microbiome, or phyllosphere microbiome, is influenced by abiotic and biotic factors that make this dynamic relationship harder to understand [@copeland2015seasonal]. Leaves are a huge contributor to a plant’s system and it is estimated that about 6.4 × 108 km2  microbes can colonize a leaf’s surface area [@morris2002fifty].  Culture-based and molecular techniques have helped biologists examine isolated microbes in greater detail. These techniques can be applied to examining the phyllosphere and its vast array of microbial communities. Thus far, many different genera of bacteria, fungi, yeasts, and algae have been identified through research [@andrews2000ecology].
 
-The focus on my investigation was to examine differences in the colonies and morphotypes present on two plants growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. The two plants I examined were the ice plant (*Carpobrotus edulis*) and fern-leaf yarrow (*Achillea filipendulina*). I chose these particular plants because of their differing plant structure and environmental status. Fern-leaf yarrow are bright, yellow flowering plants and ice-plant is a succulent with a very low percentage of flowers present. Plant-pollinator relationships are highly important to plant biodiversity and in particular, about 90% of all flowering plants rely on animals for pollination [@ollerton2011many]. In Northern California, fern-leaf yarrows are naturalized plants and ice plant is considered an invasive species. Plant invasions are known to pose serious threats to native and naturalized plant communities by robbing natural resources and reducing overall biodiversity [@foxcroft2013bottom]. Due to the structural diversity and environmental impact between these plant species types, I hypothesized that there would be a greater morphotype diversity and higher colony counts present on the leaves of fern-leaf yarrows because of the higher interactions with pollinating insects and its proximity to an invasive plant species requires more microbes to protect and enhance its fitness against the invasive threat. To test this plant-microbiome relationship, I conducted culture-based techniques from samples obtained on the leaves of each plant species. I grew cultures on tryptic soy agar (TSA) plates at three different dilutions. I found both colony and morphotype counts to be larger in fern-leaf yarrow leaves but there was only a statistical significance between the morphotype counts of each plant. 
+The focus on my investigation was to examine differences in the colonies and morphotypes present on two plants growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. The two plants I examined were the ice plant (*Carpobrotus edulis*) and fern-leaf yarrow (*Achillea filipendulina*). I chose these particular plants because of their differing plant structure and environmental status. Fern-leaf yarrows are bright, yellow flowering plants and ice-plant is a succulent with a very low percentage of flowers present. Plant-pollinator relationships are highly important to plant biodiversity and in particular, about 90% of all flowering plants rely on animals for pollination [@ollerton2011many]. In Northern California, fern-leaf yarrows are naturalized plants and ice plant is considered an invasive species. Plant invasions are known to pose serious threats to native and naturalized plant communities by robbing natural resources and reducing overall biodiversity [@foxcroft2013bottom]. Due to the structural diversity and environmental impact between these plant species types, I hypothesized that there would be a greater morphotype diversity and higher colony counts present on the leaves of fern-leaf yarrows because of the higher interactions with pollinating insects and its proximity to an invasive plant species requires more microbes to protect and enhance its fitness against the invasive threat. To test this plant-microbiome relationship, I conducted culture-based techniques from samples obtained on the leaves of each plant species. I grew cultures on tryptic soy agar (TSA) plates at three different dilutions. I found both colony and morphotype counts to be larger in fern-leaf yarrow leaves but there was only a statistical significance between the morphotype counts of each plant. 
 
 
 # Methods
@@ -115,6 +115,60 @@ colony_data %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
 ```
+
+```{r load-microscopy-data}
+microscopy_data <- read.csv(
+  "data/raw_data/2019_Spring_microscopy_data_sheet.csv")
+```
+
+``` {r produce-cell-size-summary-table}
+# Create a table of cell length, width, and area
+microscopy_data %>%
+  filter(Student_name == "Isabella_Finney") %>%
+  group_by(MOTU_ID) %>%
+  summarize(mean_length = mean(Cell_length),
+            sd_length = sd(Cell_length),
+            mean_width = mean(Cell_width),
+            mena_area = mean(Cell_area),
+            sd_area = sd(Cell_area))
+ knitr::kable(digits = 2,
+                col_names = c("MOTU ID",
+                              "Mean cell length (µm)",
+                              "SD cell length (µm)",
+                              "Mean cell width (µm)",
+                              "SD cell width (µm)",
+                              "Mean cell area (µm^2)",
+                              "SD cell area (µm^2)"))
+```
+
+## Microscopy Image Results
+![](data/images/MOTU_1_Montage.jpg)
+
+**Figure 1:** Montage imaging of morphotype #1 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_2_Montage.jpg)
+
+**Figure 2:** Montage imaging of morphotype #2 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_3_Montage.jpg)
+
+**Figure 3:** Montage imaging of morphotype #3 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_4_Montage.jpg)
+
+**Figure 4:** Montage imaging of morphotype #4 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_5_Montage.jpg)
+
+**Figure 5:** Montage imaging of morphotype #5 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_6_Montage.jpg)
+
+**Figure 6:** Montage imaging of morphotype #6 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+
+![](data/images/MOTU_7_Montage.jpg)
+
+**Figure 7:** Montage imaging of morphotype #7 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 # Discussion
 The focus of my investigation was to determine whether differences in the colonies and morphotypes present on a fern-leaf yarrow plant and ice plant growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. I hypothesized that the fern-leaf yarrow plant would have higher colony counts and morphotype diversity than the ice plant. The result of this experiment suggests that the plant structure and naturalized status allow fern-leaf yarrows to have greater morphology diversity. Although, qualitatively, fern-leaf yarrows exhibited higher colony counts, there was no statistical difference between the mean counts of the two plants. Some limitations and caveats of the study that are important to mention are the weather on my day of collection and the type of media I used for culturing. There were rain showers the night and morning before I collected my samples which could have potentially added or removed microbes and reduced the amount pollinator visits to each plant type. In addition, I used TSA plates to grow the microbes which may have negatively impacted the morphotypes I observed. My observations may be based on only a subset of microorganisms because tryptic soy agar is an ideal media for bacterial growth, not fungi or plant microbes that are very common in plant species. 
