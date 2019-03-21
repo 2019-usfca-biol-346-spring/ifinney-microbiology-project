@@ -1,4 +1,4 @@
-0.746,MOTU_ID,Measurement_number,Cell_length,Cell_length_units,Cell_width,Cell_width_units,Cell_area,Cell_area_units,Gram_positive_or_negative,Endospore_yes_no,Endospore_type,Capsule_yes_no,
+Student_name,MOTU_ID,Measurement_number,Cell_length,Cell_length_units,Cell_width,Cell_width_units,Cell_area,Cell_area_units,Gram_positive_or_negative,Endospore_yes_no,Endospore_type,Capsule_yes_no,
 Isabella_Finney,1,1,0.727,µm,0.712,µm,0.048,μm²,Gram_negative,,,no,
 Isabella_Finney,1,2,1.023,µm,1.341,µm,0.066,μm²,Gram_negative,,,no,
 Isabella_Finney,1,3,0.793,µm,0.722,µm,0.05,μm²,Gram_negative,,,no,
@@ -73,12 +73,12 @@ Morgan,R2,1,0.78,μm,0.75,μm,0.454,μm²,negative,,,no,CV 2.2
 Morgan,R2,2,0.79,μm,0.82,μm,0.561,μm²,negative,,,no,G 2.2
 Morgan,R2,3,0.73,μm,0.72,μm,0.423,μm²,negative,,,no,G 2.1
 Morgan,R2,4,0.75,μm,0.63,μm,0.375,μm²,negative,,,no,CV 2.1
-Morgan,R2,5,0.66,μm,0.69,μm,0.336,μm²,negative,,,no,
-Morgan,,,,μm,,μm,,μm²,,,,no,
-Morgan,,,,μm,,μm,,μm²,,,,no,
-Morgan,,,,μm,,μm,,μm²,,,,no,
-Morgan,,,,μm,,μm,,μm²,,,,no,
-Morgan,,,,μm,,μm,,μm²,,,,no,
+Morgan,R2,5,0.66,μm,0.69,μm,0.336,μm²,negative,,,no,G 2.2
+Morgan,,1,,μm,,μm,,μm²,,,,no,
+Morgan,,2,,μm,,μm,,μm²,,,,no,
+Morgan,,3,,μm,,μm,,μm²,,,,no,
+Morgan,,4,,μm,,μm,,μm²,,,,no,
+Morgan,,5,,μm,,μm,,μm²,,,,no,
 Morgan,,,,μm,,μm,,μm²,,,,no,
 Morgan,,,,μm,,μm,,μm²,,,,no,
 Morgan,,,,μm,,μm,,μm²,,,,no,
@@ -315,7 +315,7 @@ salma_kadir,,,,,,,,,,,,,
 salma_kadir,,,,,,,,,,,,,
 salma_kadir,,,,,,,,,,,,,
 salma_kadir,,,,,,,,,,,,,
-Yensi,UC1_inside_1_CR,,0.58,µm,0.58,µm,0.33,μm²,,,,,
+Yensi,UC1_inside_1_CR,,,µm,1.17,µm,,μm²,,,,,
 Yensi,UC1_inside_1_GRAM,,0.82,µm,0.99,µm,0.81,μm²,negative,,,,
 Yensi,,,,µm,,µm,,μm²,,,,,
 Yensi,,,,µm,,µm,,μm²,,,,,
