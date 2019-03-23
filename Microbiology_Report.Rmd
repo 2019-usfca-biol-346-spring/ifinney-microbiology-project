@@ -157,31 +157,31 @@ microscopy_data %>%
 ## Microscopy Image Results
 ![](data/images/MOTU_1_Montage.jpg)
 
-**Figure 1:** Montage imaging of morphotype #1 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 3:** Montage imaging of morphotype #1 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_2_Montage.jpg)
 
-**Figure 2:** Montage imaging of morphotype #2 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 4:** Montage imaging of morphotype #2 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_3_Montage.jpg)
 
-**Figure 3:** Montage imaging of morphotype #3 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 5:** Montage imaging of morphotype #3 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_4_Montage.jpg)
 
-**Figure 4:** Montage imaging of morphotype #4 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 6:** Montage imaging of morphotype #4 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_5_Montage.jpg)
 
-**Figure 5:** Montage imaging of morphotype #5 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 7:** Montage imaging of morphotype #5 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_6_Montage.jpg)
 
-**Figure 6:** Montage imaging of morphotype #6 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 8:** Montage imaging of morphotype #6 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 ![](data/images/MOTU_7_Montage.jpg)
 
-**Figure 7:** Montage imaging of morphotype #7 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
+**Figure 9:** Montage imaging of morphotype #7 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
 # Discussion
 
