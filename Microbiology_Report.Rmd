@@ -152,6 +152,8 @@ microscopy_data %>%
                               "SD cell area (µm^2)"))
 ```
 
+**Table 1:** Mean and standard deviation for the length, width, and cell surface area per morphotype analyzed. 
+
 ## Microscopy Image Results
 ![](data/images/MOTU_1_Montage.jpg)
 
