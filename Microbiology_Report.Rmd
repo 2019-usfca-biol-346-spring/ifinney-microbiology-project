@@ -183,6 +183,18 @@ microscopy_data %>%
 
 **Figure 9:** Montage imaging of morphotype #7 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
+| Morphotype ID | Gram Positive/Negative | Endospore Yes/No | Capsule Yes/No |
+|---------------|------------------------|------------------|----------------|
+| 1             | Gram Positive          | No               | N/A            |
+| 2             | Gram Positive          | No               | N/A            |
+| 3             | Gram Negative          | No               | N/A            |
+| 4             | Gram Negative          | Yes              | N/A            |
+| 5             | Gram Negative          | No               | N/A            |
+| 6             | Gram Negative          | No               | N/A            |
+| 7             | Gram Negative          | No               | N/A            |
+
+**Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
+
 # Discussion
 
 ## Culturing
