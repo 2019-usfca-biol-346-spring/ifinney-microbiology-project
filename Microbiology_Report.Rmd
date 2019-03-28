@@ -185,7 +185,7 @@ microscopy_data %>%
 
 | Morphotype ID | Gram Positive/Negative | Endospore Yes/No | Capsule Yes/No |
 |---------------|------------------------|------------------|----------------|
-| 1             | Gram Positive          | No               | N/A            |
+| 1             | Gram Negative          | No               | N/A            |
 | 2             | Gram Positive          | No               | N/A            |
 | 3             | Gram Positive          | No               | N/A            |
 | 4             | Gram Negative          | Yes              | N/A            |
