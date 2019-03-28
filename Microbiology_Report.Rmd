@@ -187,7 +187,7 @@ microscopy_data %>%
 |---------------|------------------------|------------------|----------------|
 | 1             | Gram Positive          | No               | N/A            |
 | 2             | Gram Positive          | No               | N/A            |
-| 3             | Gram Negative          | No               | N/A            |
+| 3             | Gram Positive          | No               | N/A            |
 | 4             | Gram Negative          | Yes              | N/A            |
 | 5             | Gram Negative          | No               | N/A            |
 | 6             | Gram Negative          | No               | N/A            |
