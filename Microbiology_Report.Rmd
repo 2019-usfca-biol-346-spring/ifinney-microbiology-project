@@ -33,13 +33,16 @@ For further examination, I obtained pure microbial cultures from morphotypes tha
 ### Staining and Microscopy
 In order to visualize and identify the different morphotypes, I created 3 stained slides from the pure cultures I obtained. I made a crystal violet stain, gram stain, and Maneval’s stain. These staining methods were used so that I could observe and identity microbes’ different physical features under a light microscope. Crystal violet staining helps to visualize the basic size, shape, and arrangement of the cells. Gram staining helps distinguish between gram-positive and gram-negative bacteria. Maneval’s stain is a negative stain that shows whether the bacterium contains a capsule.  After mounting, fixing, and staining each culture, I placed the slide under a Leica DM500 light microscope and observed each slide at 100x magnification under immersion oil. 
 
+### DNA Extraction and PCR Amplification
+I followed the standard DNA extraction protocol for bacterial cells as provided in the SigmaREDExtract n’ Amp Plant Kit. For the PCR Amplification, the PCR recipe per reaction mixture is as follows: 4 µL template DNA, 10 µL Amp solution, 1 µL of 10µM 27f primer, 1 µL 10µM 1492r primer, 1 µL 1M BSA, and 3µL PCR H20. The temperature and run time for each PCR cycle are as follows: 3min at 94$^\circ$C, 30 seconds at 94$^\circ$C (35 times), 30 seconds at 55$^\circ$C (35 times), 2 minutes at 72$^\circ$C (35 times), 10 minutes at 72$^\circ$C, and holding at 4$^\circ$C. I checked for successful PCR amplification using gel electrophoresis for 30 min at 100V. Products were visualized with SYBR Safe and UV light. The ladder in image is a lab DNA builder.
+
 ## Computational Analysis
 
-##Culturing Analysis
+## Culturing Analysis
 The process to analyze the data gathered was accomplished using a systematic workflow. First, I created and uploaded data onto a Google Sheet. I added data about the number of different colonies and morphotypes counted per TSA plate at each concentration for each sample treatment. This sheet was then converted and exported as a csv file to the raw data project file folder. Using the R language and RStudio, I uploaded my project and added various software packages such as dplyr and ggplot2 to a Rmd file. I used the csv data file and appropriate packages I added to create the figures for my analysis. I also performed ANOVA analyses on both colony and morphology counts.  
 
-##Microscopy Analysis
-I connected the light microscope to a computer containing the Leica LAS E2 software in order to directly take photos of each slide from the microscope. Photos were standardized and captured at 2048x1536 resolution. After obtaining my images, I used Fiji and ImageJ to measure and analyze each image. Fiji is an image processing package within the ImageJ software that focuses on biological-image processing [@schindelin2012fiji]. I uploaded the captured micrograph and then proceeded to calibrate and scale each micrograph to 10 m. I changed each image to an inverted, binary form and recorded the length, width, and area for 5 cells per morphotype. I created a montage with appropriate labels of each micrograph taken for each staining method per morphotype. Using R and R studio, I uploaded these montages to my report with appropriate captions. I also analyzed the mean and standard deviation for length, width, and cell surface area per morphotype. 
+## Microscopy Analysis
+I connected the light microscope to a computer containing the Leica LAS E2 software in order to directly take photos of each slide from the microscope. Photos were standardized and captured at 2048x1536 resolution. After obtaining my images, I used Fiji and ImageJ to measure and analyze each image. Fiji is an image processing package within the ImageJ software that focuses on biological-image processing [@schindelin2012fiji]. I uploaded the captured micrograph and then proceeded to calibrate and scale each micrograph to 10 m. I changed each image to an inverted, binary form and recorded the length, width, and area for 5 cells per morphotype. I created a montage with appropriate labels of each micrograph taken for each staining method per morphotype. Using R and R studio, I uploaded these montages to my report with appropriate captions. I also analyzed the mean and standard deviation for length, width, and cell surface area per morphotype. Finally, I created a markdown table displaying the appropriate characteristics I observed to be present per morphotype.  
 
 # Results
 
@@ -48,6 +51,9 @@ The first thing I investigated was the number of colonies present for each sampl
 
 ## Detecting Morphotypes
 Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 2; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
+
+## Categorizing Morphotypes with Microscopy
+The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is Azomonas agilis, morphotype #2 is Staphylococcus aureus, morphotype #3 is a Acidovorax spp., morphotype #4 is a Streptococcus spp., morphotype #5 is Bacillus subtilis, morphotype #6 is a Pseudomonas spp., and morphotype #7 is a Bacilius spp. (Table 2). From all of microbes I analyzed, only the 3rd and 4th morphotypes were gram positive. 
 
 ```{r load-packages-and-data}
 # load packages as needed
@@ -194,6 +200,20 @@ microscopy_data %>%
 | 7             | Gram Negative          | No               | N/A            |
 
 **Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
+
+
+| Morphotype ID | Morphotype Identity  | GenBank ID  | Percent Match | Query Cover | E Value |
+|---------------|----------------------|-------------|---------------|-------------|---------|
+| 1             | No Good Match        | N/A         | N/A           | N/A         | N/A     |
+| 2             | Bacillus spp.        | MH260980. 1 | 95%           | 80.17%      | 8e-94   |
+| 3             | Sequence Failed      | N/A         | N/A           | N/A         | N/A     |
+| 4             | Pseudomonas spp.     | JF313049.1  | 100%          | 94.82%      | 8e-147  |
+| 5             | Sequence Failed      | N/A         | N/A           | N/A         | N/A     |
+| 6             | Pseudomonas syrinae  | MK072676    | 92%           | 90.72%      | 7e-164  |
+| 7             | Bacillus spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
+| Negative      | Uncultured bacterium | GU510538.1  | 82%           | 100.00%     | 5e-09   |
+
+**Table 3:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value. 
 
 # Discussion
 
