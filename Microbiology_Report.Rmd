@@ -38,11 +38,14 @@ I followed the standard DNA extraction protocol for bacterial cells as provided 
 
 ## Computational Analysis
 
-## Culturing Analysis
+### Culturing Analysis
 The process to analyze the data gathered was accomplished using a systematic workflow. First, I created and uploaded data onto a Google Sheet. I added data about the number of different colonies and morphotypes counted per TSA plate at each concentration for each sample treatment. This sheet was then converted and exported as a csv file to the raw data project file folder. Using the R language and RStudio, I uploaded my project and added various software packages such as dplyr and ggplot2 to a Rmd file. I used the csv data file and appropriate packages I added to create the figures for my analysis. I also performed ANOVA analyses on both colony and morphology counts.  
 
-## Microscopy Analysis
+### Microscopy Analysis
 I connected the light microscope to a computer containing the Leica LAS E2 software in order to directly take photos of each slide from the microscope. Photos were standardized and captured at 2048x1536 resolution. After obtaining my images, I used Fiji and ImageJ to measure and analyze each image. Fiji is an image processing package within the ImageJ software that focuses on biological-image processing [@schindelin2012fiji]. I uploaded the captured micrograph and then proceeded to calibrate and scale each micrograph to 10 m. I changed each image to an inverted, binary form and recorded the length, width, and area for 5 cells per morphotype. I created a montage with appropriate labels of each micrograph taken for each staining method per morphotype. Using R and R studio, I uploaded these montages to my report with appropriate captions. I also analyzed the mean and standard deviation for length, width, and cell surface area per morphotype. Finally, I created a markdown table displaying the appropriate characteristics I observed to be present per morphotype.  
+
+### Phylogenic Analysis by Maximum Likelihood Method
+The evolutionary history was inferred by using the Maximum Likelihood method based on the General Time Reversible model [@nei2000molecular]. The tree with the highest log likelihood (-1393.40) is shown. The percentage of trees in which the associated taxa clustered together is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter = 200.0000)). The rate variation model allowed for some sites to be evolutionarily invariable ([+I], 0.00% sites). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 6 nucleotide sequences. Codon positions included were 1st+2nd+3rd+Noncoding. All positions containing gaps and missing data were eliminated. There were a total of 250 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 [@kumar2016mega7].
 
 # Results
 
@@ -203,9 +206,11 @@ microscopy_data %>%
 
 **Figure 10:** 
 
+**Table 3:**
+
 ![](data/images/ML_phylogeny_tree_2.png)
+
 **Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method
-The evolutionary history was inferred by using the Maximum Likelihood method based on the General Time Reversible model [@nei2000molecular]. The tree with the highest log likelihood (-1393.40) is shown. The percentage of trees in which the associated taxa clustered together is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter = 200.0000)). The rate variation model allowed for some sites to be evolutionarily invariable ([+I], 0.00% sites). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 6 nucleotide sequences. Codon positions included were 1st+2nd+3rd+Noncoding. All positions containing gaps and missing data were eliminated. There were a total of 250 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 [@kumar2016mega7].
 
 | Morphotype ID | Morphotype Identity  | GenBank ID  | Percent Match | Query Cover | E Value |
 |---------------|----------------------|-------------|---------------|-------------|---------|
@@ -218,7 +223,7 @@ The evolutionary history was inferred by using the Maximum Likelihood method bas
 | 7             | Bacillus spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
 | Negative      | Uncultured bacterium | GU510538.1  | 82%           | 100.00%     | 5e-09   |
 
-**Table 3:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value. 
+**Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value. 
 
 # Discussion
 
@@ -227,6 +232,8 @@ The focus of my investigation was to determine whether differences in the coloni
 
 Differences in performance among plant species can greatly impact ecosystem function so studying the plant microbiome is important. Invasive plant species, like ice plants, are often able to invade and persist in their environment due to their ability in altering soil chemistry and nutrient cycling through the microbes that accompany them [@vila2011ecological]. This can lead to the decline in species diversity among native and naturalized plants in their respective environment. To try and combat this depletion in resources, native and naturalized plants such as the fern-leaf yarrow may recruit more beneficial microbes that can aid in tolerance or defense from varying environmental stresses. In addition, scientists argue that invasive plants can be released from attack by natural enemies, like fungal and viral pathogens [@mitchell2003release]. This may have contributed to the differences I observed in the number of morphotypes present on each plant species. Understanding the microbial impact of invasive species on native and naturalized plants and their ecosystem can be an effective tool in restoring habitats that have been negatively impacted by introduction these invasive plants.
 
-##Microscopy
+## Microscopy
+
+## Molecular
 
 # Sources Cited
