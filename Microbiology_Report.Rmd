@@ -74,6 +74,8 @@ colony_data <- read.csv(
          "- Sheet1.csv"))
 ```
 
+## Culturing Results
+
 ```{r colony-counts-histogram}
 #make a histogram of colony counts
 colony_data %>%
@@ -163,7 +165,8 @@ microscopy_data %>%
 
 **Table 1:** Mean and standard deviation for the length, width, and cell surface area per morphotype analyzed. 
 
-## Microscopy Image Results
+## Microscopy Results
+
 ![](data/images/MOTU_1_Montage.jpg)
 
 **Figure 3:** Montage imaging of morphotype #1 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
@@ -203,6 +206,8 @@ microscopy_data %>%
 | 7             | Gram Negative          | No               | N/A            |
 
 **Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
+
+## Molecular Results
 
 **Figure 10:** 
 
