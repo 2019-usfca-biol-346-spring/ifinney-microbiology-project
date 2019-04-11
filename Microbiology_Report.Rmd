@@ -1,7 +1,7 @@
 ---
 title: 'Exploring the Microbiome in Native and Non-Native Plants at the University of San Francisco Lone Mountain Campus'
 author: "Isabella Finney"
-date: "March 21, 2019"
+date: "April 11, 2019"
 output: word_document
 csl: american-society-for-microbiology.csl
 bibliography: references.bib
@@ -33,8 +33,8 @@ For further examination, I obtained pure microbial cultures from morphotypes tha
 ### Staining and Microscopy
 In order to visualize and identify the different morphotypes, I created 3 stained slides from the pure cultures I obtained. I made a crystal violet stain, gram stain, and Maneval’s stain. These staining methods were used so that I could observe and identity microbes’ different physical features under a light microscope. Crystal violet staining helps to visualize the basic size, shape, and arrangement of the cells. Gram staining helps distinguish between gram-positive and gram-negative bacteria. Maneval’s stain is a negative stain that shows whether the bacterium contains a capsule.  After mounting, fixing, and staining each culture, I placed the slide under a Leica DM500 light microscope and observed each slide at 100x magnification under immersion oil. 
 
-### DNA Extraction and PCR Amplification
-I followed the standard DNA extraction protocol for bacterial cells as provided in the SigmaREDExtract n’ Amp Plant Kit. For the PCR Amplification, the PCR recipe per reaction mixture is as follows: 4 µL template DNA, 10 µL Amp solution, 1 µL of 10µM 27f primer, 1 µL 10µM 1492r primer, 1 µL 1M BSA, and 3µL PCR H20. The temperature and run time for each PCR cycle are as follows: 3min at 94$^\circ$C, 30 seconds at 94$^\circ$C (35 times), 30 seconds at 55$^\circ$C (35 times), 2 minutes at 72$^\circ$C (35 times), 10 minutes at 72$^\circ$C, and holding at 4$^\circ$C. I checked for successful PCR amplification using gel electrophoresis for 30 min at 100V. Products were visualized with SYBR Safe and UV light. The ladder in image is a lab DNA builder.
+### DNA Extraction, PCR Amplification and Gel Electrophoresis
+I followed the standard DNA extraction protocol for bacterial cells as provided in the SigmaREDExtract n’ Amp Plant Kit. For the PCR Amplification, the PCR recipe per reaction mixture is as follows: 4 µL template DNA, 10 µL Amp solution, 1 µL of 10µM 27f primer, 1 µL 10µM 1492r primer, 1 µL 1M BSA, and 3µL PCR H20. The temperature and run time for each PCR cycle are as follows: 3min at 94$^\circ$C, 30 seconds at 94$^\circ$C (35 times), 30 seconds at 55$^\circ$C (35 times), 2 minutes at 72$^\circ$C (35 times), 10 minutes at 72$^\circ$C, and holding at 4$^\circ$C. I checked for successful PCR amplification using gel electrophoresis for 30 min at 100V. Products were visualized with SYBR Safe and UV light. The ladder in image is a lab DNA builder. After checking for successful amplification using gel electrophoresis, PCR products were cleaned with Invitrogen ExoSAP. They were sent for unidirectional Sanger sequencing at MCLAB located in South San Francisco, CA. 
 
 ## Computational Analysis
 
@@ -201,6 +201,11 @@ microscopy_data %>%
 
 **Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
 
+**Figure 10:** 
+
+![](data/images/ML_phylogeny_tree_2.png)
+**Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method
+The evolutionary history was inferred by using the Maximum Likelihood method based on the General Time Reversible model [@nei2000molecular]. The tree with the highest log likelihood (-1393.40) is shown. The percentage of trees in which the associated taxa clustered together is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter = 200.0000)). The rate variation model allowed for some sites to be evolutionarily invariable ([+I], 0.00% sites). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 6 nucleotide sequences. Codon positions included were 1st+2nd+3rd+Noncoding. All positions containing gaps and missing data were eliminated. There were a total of 250 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 [@kumar2016mega7].
 
 | Morphotype ID | Morphotype Identity  | GenBank ID  | Percent Match | Query Cover | E Value |
 |---------------|----------------------|-------------|---------------|-------------|---------|
