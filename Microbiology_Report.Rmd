@@ -59,7 +59,7 @@ The first thing I investigated was the number of colonies present for each sampl
 Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 2; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
 
 ## Categorizing Morphotypes with Microscopy
-The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is Azomonas agilis, morphotype #2 is Staphylococcus aureus, morphotype #3 is a Acidovorax spp., morphotype #4 is a Streptococcus spp., morphotype #5 is Bacillus subtilis, morphotype #6 is a Pseudomonas spp., and morphotype #7 is a Bacilius spp. (Table 2). From all of microbes I analyzed, only the 3rd and 4th morphotypes were gram positive. 
+The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is Azomonas agilis, morphotype #2 is Staphylococcus aureus, morphotype #3 is a Acidovorax spp., morphotype #4 is a Streptococcus spp., morphotype #5 is Bacillus subtilis, morphotype #6 is a Pseudomonas spp., and morphotype #7 is a Bacilius spp. (Table 2). From all of microbes I analyzed, only the $3^{rd}$ and $4^{th}$ morphotypes were gram positive. In addition, the only cocci shaped bacteria I noted were morphotypes #1 and #2 (Fig.3, Fig.4).
 
 ```{r load-packages-and-data}
 # load packages as needed
@@ -212,7 +212,7 @@ microscopy_data %>%
 
 ## Molecular Results
 
-**Figure 10:** 
+**Figure 10:**
 
 **Table 3:**
 
