@@ -212,9 +212,21 @@ microscopy_data %>%
 
 ## Molecular Results
 
-**Figure 10:**
+![](data/images/PCR_gel_results.jpg)
 
-**Table 3:**
+**Figure 10:** First round PCR gel image results. The lanes corresponding to each morphotype and negative control are labeled appropriately on the image.
+
+| Morphotype ID | Qubit DNA Concentration (ng/μL) |
+|---------------|---------------------------------|
+| 1             | 1.49 ng/μL                      |
+| 2             | 2.7 ng/μL                       |
+| 3             | 0 ng/μL                         |
+| 4             | 1.97 ng/μL                      |
+| 5             | 1.32 ng/μL                      |
+| 6             | 0 ng/μL                         |
+| 7             | 1.69 ng/μL                      |
+
+**Table 3:** Qubit DNA concentration results for each morphotype tested.
 
 ![](data/images/ML_phylogeny_tree_2.png)
 
