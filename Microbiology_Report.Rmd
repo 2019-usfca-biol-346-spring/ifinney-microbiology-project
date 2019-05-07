@@ -1,7 +1,7 @@
 ---
-title: 'Exploring the Microbiome in Native and Non-Native Plants at the University of San Francisco Lone Mountain Campus'
+title: '*Pseudomonas* species and *Bacillus* species dominate the phyllosphere of fern leaf yarrows (*Achillea filipendulina*) and ice plants (*Carpobrotus edulis*) located at the Lone Mountain portion of the University of San Francisco’s Hilltop Campus'
 author: "Isabella Finney"
-date: "April 11, 2019"
+date: "May 5, 2019"
 output: word_document
 csl: american-society-for-microbiology.csl
 bibliography: references.bib
@@ -31,7 +31,7 @@ I used 100mm tryptic soy agar (TSA) plates for plating the three sample treatmen
 For further examination, I obtained pure microbial cultures from morphotypes that I observed to be either in high abundance or very rarely present among all of the TSA dilution plates from my samples. To do this, I used an inoculating loop to scoop the desired morphotype colony from the diluted plate. I transferred the single colony on a sterile TSA plate by streaking the loop across one third the agar surface, inoculating the loop with a bacticinerator, dragging the loop through the 1st streak and streaking another third, and repeating once more. This method should isolate pure cultures of microbes. I completed this method 7 times, once for each morphotype observed. I also used the bacticinerator to sterilize the metal loop between each morphotype streaking. After 5 days of incubating the plates at 37$^\circ$C, I restreaked plates that did not produce single colonies or were contaminated. The restreaked plates were incubated for only two days.
 
 ### Staining and Microscopy
-In order to visualize and identify the different morphotypes, I created 3 stained slides from the pure cultures I obtained. I made a crystal violet stain, gram stain, and Maneval’s stain. These staining methods were used so that I could observe and identity microbes’ different physical features under a light microscope. Crystal violet staining helps to visualize the basic size, shape, and arrangement of the cells. Gram staining helps distinguish between gram-positive and gram-negative bacteria. Maneval’s stain is a negative stain that shows whether the bacterium contains a capsule.  After mounting, fixing, and staining each culture, I placed the slide under a Leica DM500 light microscope and observed each slide at 100x magnification under immersion oil. 
+In order to visualize and identify the different morphotypes, I created 3 stained slides from the pure cultures I obtained. I made a crystal violet stain, gram stain, and Maneval’s stain. These staining methods were used so that I could observe and identity microbes’ different physical features under a light microscope. Crystal violet staining helps to visualize the basic size, shape, and arrangement of the cells. Gram staining helps distinguish between gram-positive and gram-negative bacteria. Maneval’s stain is a negative stain that shows whether the bacterium contains a capsule.  After mounting, fixing, and staining each culture, I placed the slide under a Leica DM500 light microscope and observed each slide at 1000x magnification under immersion oil. 
 
 ### DNA Extraction, PCR Amplification and Gel Electrophoresis
 I followed the standard DNA extraction protocol for bacterial cells as provided in the SigmaREDExtract n’ Amp Plant Kit. For the PCR Amplification, the PCR recipe per reaction mixture is as follows: 4 µL template DNA, 10 µL Amp solution, 1 µL of 10µM 27f primer, 1 µL 10µM 1492r primer, 1 µL 1M BSA, and 3µL PCR H20. The temperature and run time for each PCR cycle are as follows: 3min at 94$^\circ$C, 30 seconds at 94$^\circ$C (35 times), 30 seconds at 55$^\circ$C (35 times), 2 minutes at 72$^\circ$C (35 times), 10 minutes at 72$^\circ$C, and holding at 4$^\circ$C. I checked for successful PCR amplification using 1% agarose gel. The gel was run for 30 min at 100V. Products were visualized with SYBR Safe and UV light. The ladder in image is a 1kb ladder (Bio-Rad Laboratories, Inc). After checking for successful amplification using gel electrophoresis, PCR products were cleaned with Invitrogen ExoSAP. They were sent for unidirectional Sanger sequencing at MCLAB located in South San Francisco, CA. 
@@ -45,7 +45,7 @@ The process to analyze the data gathered was accomplished using a systematic wor
 I connected the light microscope to a computer containing the Leica LAS E2 software in order to directly take photos of each slide from the microscope. Photos were standardized and captured at 2048x1536 resolution. After obtaining my images, I used Fiji and ImageJ to measure and analyze each image. Fiji is an image processing package within the ImageJ software that focuses on biological-image processing [@schindelin2012fiji]. I uploaded the captured micrograph and then proceeded to calibrate and scale each micrograph to 10 m. I changed each image to an inverted, binary form and recorded the length, width, and area for 5 cells per morphotype. I created a montage with appropriate labels of each micrograph taken for each staining method per morphotype. Using R and R studio, I uploaded these montages to my report with appropriate captions. I also analyzed the mean and standard deviation for length, width, and cell surface area per morphotype. Finally, I created a markdown table displaying the appropriate characteristics I observed to be present per morphotype.  
 
 ### Molecular Analysis
-I analyzed the sequence data using the program MEGA7. The Molecular Evolutionary Genetic Analysis (MEGA) software is an integrated desktop tool designed to preform sequence alignments, infer phylogenetic trees, mine web-based databases, estimate rates of molecular evolution, and test evolutionary hypotheses [@kumar2008mega]. Using MEGA7, I manually trimmed raw Sanger sequences as well as noted which sequences failed. I exported the trimmed sequences to Fasta. Using the ClustalW program, I aligned the trimmed sequences along with the sequence for the outgroup, Thermus aquaticus. Using the saved alignment, I used the Maximum Likelihood method to infer their phylogeny. Using NCBI Blast and the GenBank nucleotide database, I searched for the identities and accompanying descriptions for each non-failed, trimmed sequence.   
+I analyzed the sequence data using the program MEGA7. The Molecular Evolutionary Genetic Analysis (MEGA) software is an integrated desktop tool designed to preform sequence alignments, infer phylogenetic trees, mine web-based databases, estimate rates of molecular evolution, and test evolutionary hypotheses [@kumar2008mega]. Using MEGA7, I manually trimmed raw Sanger sequences as well as noted which sequences failed. I exported the trimmed sequences to Fasta. Using the ClustalW program, I aligned the trimmed sequences along with the sequence for the outgroup, *Thermus aquaticus*. Using the saved alignment, I used the Maximum Likelihood method to infer their phylogeny. Using NCBI Blast and the GenBank nucleotide database, I searched for the identities and accompanying descriptions for each non-failed, trimmed sequence.   
 
 ### Phylogenic Analysis by Maximum Likelihood Method
 The evolutionary history was inferred by using the Maximum Likelihood method based on the General Time Reversible model [@nei2000molecular]. The tree with the highest log likelihood (-1393.40) is shown. The percentage of trees in which the associated taxa clustered together is shown next to the branches. Initial tree(s) for the heuristic search were obtained automatically by applying Neighbor-Join and BioNJ algorithms to a matrix of pairwise distances estimated using the Maximum Composite Likelihood (MCL) approach, and then selecting the topology with superior log likelihood value. A discrete Gamma distribution was used to model evolutionary rate differences among sites (5 categories (+G, parameter = 200.0000)). The rate variation model allowed for some sites to be evolutionarily invariable ([+I], 0.00% sites). The tree is drawn to scale, with branch lengths measured in the number of substitutions per site. The analysis involved 6 nucleotide sequences. Codon positions included were 1st+2nd+3rd+Noncoding. All positions containing gaps and missing data were eliminated. There were a total of 250 positions in the final dataset. Evolutionary analyses were conducted in MEGA7 [@kumar2016mega7].
@@ -58,8 +58,6 @@ The first thing I investigated was the number of colonies present for each sampl
 ## Detecting Morphotypes
 Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 2; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
 
-## Categorizing Morphotypes with Microscopy
-The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is Azomonas agilis, morphotype #2 is Staphylococcus aureus, morphotype #3 is a Acidovorax spp., morphotype #4 is a Streptococcus spp., morphotype #5 is Bacillus subtilis, morphotype #6 is a Pseudomonas spp., and morphotype #7 is a Bacilius spp. (Table 2). From all of microbes I analyzed, only the $3^{rd}$ and $4^{th}$ morphotypes were gram positive. In addition, the only cocci shaped bacteria I noted were morphotypes #1 and #2 (Fig.3, Fig.4).
 
 ```{r load-packages-and-data}
 # load packages as needed
@@ -154,10 +152,11 @@ microscopy_data %>%
   summarize(mean_length = mean(Cell_length),
             sd_length = sd(Cell_length),
             mean_width = mean(Cell_width),
-            mena_area = mean(Cell_area),
+            sd_width = sd(Cell_width),
+            mean_area = mean(Cell_area),
             sd_area = sd(Cell_area)) %>%
  knitr::kable(digits = 2,
-                col_names = c("MOTU ID",
+                col.names = c("MOTU ID",
                               "Mean cell length (µm)",
                               "SD cell length (µm)",
                               "Mean cell width (µm)",
@@ -198,15 +197,15 @@ microscopy_data %>%
 
 **Figure 9:** Montage imaging of morphotype #7 stained in crystal violet ( Panel A), gram's stain (Panel B), and Maneval's stain (Panel C).
 
-| Morphotype ID | Gram Positive/Negative | Endospore Yes/No | Capsule Yes/No |
-|---------------|------------------------|------------------|----------------|
-| 1             | Gram Negative          | No               | N/A            |
-| 2             | Gram Positive          | No               | N/A            |
-| 3             | Gram Positive          | No               | N/A            |
-| 4             | Gram Negative          | Yes              | N/A            |
-| 5             | Gram Negative          | No               | N/A            |
-| 6             | Gram Negative          | No               | N/A            |
-| 7             | Gram Negative          | No               | N/A            |
+| Morphotype ID | Shape    | Gram Positive/Negative | Endospore Yes/No | Capsule Yes/No |
+|---------------|----------|------------------------|------------------|----------------|
+| 1             | Cocci    | Gram Negative          | No               | N/A            |
+| 2             | Cocci    | Gram Positive          | No               | N/A            |
+| 3             | Bacillus | Gram Positive          | No               | N/A            |
+| 4             | Bacillus | Gram Negative          | Yes              | N/A            |
+| 5             | Bacillus | Gram Negative          | No               | N/A            |
+| 6             | Bacillus | Gram Negative          | No               | N/A            |
+| 7             | Bacillus | Gram Negative          | No               | N/A            |
 
 **Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
 
@@ -232,16 +231,16 @@ microscopy_data %>%
 
 **Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method
 
-| Morphotype ID | Morphotype Identity  | GenBank ID  | Percent Match | Query Cover | E Value |
-|---------------|----------------------|-------------|---------------|-------------|---------|
-| 1             | No Good Match        | N/A         | N/A           | N/A         | N/A     |
-| 2             | Bacillus spp.        | MH260980. 1 | 95%           | 80.17%      | 8e-94   |
-| 3             | Sequence Failed      | N/A         | N/A           | N/A         | N/A     |
-| 4             | Pseudomonas spp.     | JF313049.1  | 100%          | 94.82%      | 8e-147  |
-| 5             | Sequence Failed      | N/A         | N/A           | N/A         | N/A     |
-| 6             | Pseudomonas syrinae  | MK072676    | 92%           | 90.72%      | 7e-164  |
-| 7             | Bacillus spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
-| Negative      | Uncultured bacterium | GU510538.1  | 82%           | 100.00%     | 5e-09   |
+| Morphotype ID | Morphotype Identity    | GenBank ID  | Percent Match | Query Cover | E Value |
+|---------------|------------------------|-------------|---------------|-------------|---------|
+| 1             | No Good Match          | N/A         | N/A           | N/A         | N/A     |
+| 2             | *Bacillus* spp.        | MH260980. 1 | 95%           | 80.17%      | 8e-94   |
+| 3             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
+| 4             | *Pseudomonas* spp.     | JF313049.1  | 100%          | 94.82%      | 8e-147  |
+| 5             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
+| 6             | *Pseudomonas syringae* | MK072676    | 92%           | 90.72%      | 7e-164  |
+| 7             | *Bacillus* spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
+| Negative      | Uncultured bacterium   | GU510538.1  | 82%           | 100.00%     | 5e-09   |
 
 **Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value. 
 
@@ -252,8 +251,13 @@ The focus of my investigation was to determine whether differences in the coloni
 
 Differences in performance among plant species can greatly impact ecosystem function so studying the plant microbiome is important. Invasive plant species, like ice plants, are often able to invade and persist in their environment due to their ability in altering soil chemistry and nutrient cycling through the microbes that accompany them [@vila2011ecological]. This can lead to the decline in species diversity among native and naturalized plants in their respective environment. To try and combat this depletion in resources, native and naturalized plants such as the fern-leaf yarrow may recruit more beneficial microbes that can aid in tolerance or defense from varying environmental stresses. In addition, scientists argue that invasive plants can be released from attack by natural enemies, like fungal and viral pathogens [@mitchell2003release]. This may have contributed to the differences I observed in the number of morphotypes present on each plant species. Understanding the microbial impact of invasive species on native and naturalized plants and their ecosystem can be an effective tool in restoring habitats that have been negatively impacted by introduction these invasive plants.
 
-## Microscopy
+#Predicting Species based on Microscopy
+The purpose of performing this microscopy analysis was to gain more detailed information about some of the microbial communities present on the leaves of ice plants (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is *Azomonas agilis*, morphotype #2 is *Staphylococcus aureus*, morphotype #3 is an *Acidovorax* spp., morphotype #4 is *Pseudomonas aeruginosa*, morphotype #5 is *Bacillus subtilis*, morphotype #6 is a *Pseudomonas* spp., and morphotype #7 is a *Bacilius* spp. (Table 2). The majority of the morphotypes were gram negative, bacillus shaped bacterium. From all of microbes I analyzed, only the $2^{nd}$ and $3^{rd}$ morphotypes were gram positive. In addition, the only cocci shaped bacteria I noted were morphotypes #1 and #2 (Fig.3, Fig.4). Almost of the predictions I made for the identities of the morphotypes fall under two genera, *Bacillus* and *Pseudomonas*. Both of these genera are found globally, in both plants and mammals. Both genera contain species that can benefit and protect or cause infection to the host. For example, *Pseudomonas aeruginosa* is a naturally occurring bacterium that causes infections in immunocompromised humans acts as a pathogen in plants. In plants, *P. aeruginosa* is an opportunistic pathogen in that it exploits a break in the host defenses to initiate an infection [@todar2012]. Pathogens are harmful in that infections can eventually lead to disease or death in the host.
 
-## Molecular
+# Combining Microscopy and Molecular Data
+The phyllosphere presents an opportunity to observe the diverse interactions between plants and bacterial communities. Although the phyllosphere supports great microbial diversity, there is still limited information about the exact microbes that inhabit various plant species. Of the sequences which successfully resulted in valid BLAST results, the two most abundant genera present were *Bacillus* and *Pseudomonas*. *Bacillus* is characterized as being rod-shaped, endospore-forming, and gram-positive. Although it is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996].
+
+The two morphotypes I identified as Bacillus species are morphotype #2 and morphotype #7. The microscopy images obtained contained some anomalies as when compared to its defining characteristics. I categorized morphotype #2 as being gram-positive and cocci-shaped and morphotype #7 as being bacillus and gram-negative. Some *Bacillus* species can be classified as coccobacillus-shaped. In addition, the body sizes of *Bacillus* spp. often range between 0.5-1.0 µm wide by 1.0-4.0 µm long [@turnbull1996]. This accounts for why I initially classified the morphotype as cocci-shaped. Although morphotype #7 does clearly exhibit the bacillus shape, it stained gram-negative. This could be explained by either human error or age. In my process of staining, I possibly may have destained the crystal violet completely off of the slide which would have caused the safranin to completely stain the cells, giving the appearance of a gram-negative bacteria. Another possibility is that although *Bacillus* is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. Bacillus spp. are among some of the most globally dispersed bacteria and produce many biological compounds that affect host plants and their interactions with other organisms. For example, *Bacillus substilis* is isolated to produce the biocontrol product Serenade which effective in controlling foliar and soilborne pathways from pathogenic bacteria such as *Pseudomonas* [@bais2004biocontrol]. 
+
 
 # Sources Cited
