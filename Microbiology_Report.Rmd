@@ -8,7 +8,7 @@ bibliography: references.bib
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 # Introduction
@@ -100,9 +100,13 @@ colony_data <- read.csv(
          "- Sheet1.csv"))
 
 #Read in csv files for final project with data
-final_project_culturing_counts <- read.csv("data/raw_data/final_project_culturing_counts.csv")
+final_project_culturing_counts <- read.csv(
+  paste0("data/raw_data/",
+        "final_project_culturing_counts.csv"))
 
-final_project_culturing_V2 <- read.csv("data/raw_data/final_project_culturing_V2.csv")
+final_project_culturing_V2 <- read.csv
+  paste0("data/raw_data/",
+        "final_project_culturing_V2.csv"))
 ```
 
 ## Culturing Results
@@ -124,7 +128,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 1:** Number of colonies per sample treatment and control at 1x dilution.
 
-```{r colony-counts-statistics}
+```{r colony-counts-statistics, echo = FALSE, message = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants
 colony_data %>%
@@ -155,7 +159,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 2:** Count of different morphotypes present per sample treatment and control at 1x dilution. 
 
-```{r morphology-counts-statistics}
+```{r morphology-counts-statistics, echo = FALSE, message = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plants
 colony_data %>%
@@ -261,15 +265,15 @@ microscopy_data %>%
 
 **Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method.
 
-| Morphotype ID | Morphotype Identity    | GenBank ID  | Percent Match | Query Cover | E Value |
+| Morphotype ID | Morphotype Identity    | GenBank ID   | Percent Match | Query Cover | E Value |
 |---------------|------------------------|-------------|---------------|-------------|---------|
 | 1             | No Good Match          | N/A         | N/A           | N/A         | N/A     |
-| 2             | *Bacillus* spp.        | MH260980. 1 | 95%           | 80.17%      | 8e-94   |
+| 2             | *Bacillus* sp.        | MH260980. 1 | 95%           | 80.17%      | 8e-94   |
 | 3             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
-| 4             | *Pseudomonas* spp.     | JF313049.1  | 100%          | 94.82%      | 8e-147  |
+| 4             | *Pseudomonas* sp.     | JF313049.1  | 100%          | 94.82%      | 8e-147  |
 | 5             | *Pseudomonas syringae* | MK072676    | 92%           | 90.72%      | 7e-164  |
 | 6             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
-| 7             | *Bacillus* spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
+| 7             | *Bacillus* sp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
 | Negative      | Uncultured bacterium   | GU510538.1  | 82%           | 100.00%     | 5e-09   |
 
 **Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
@@ -291,7 +295,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 12:** Number of colonies observed per plant species. 
 
-```{r final-colony-counts-statistics}
+```{r final-colony-counts-statistics, echo = FALSE, message = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants species
 final_project_culturing_counts %>%
@@ -318,7 +322,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 13:** Count of different morphotypes present per plant species.
 
-```{r final-morphology-counts-statistics}
+```{r final-morphology-counts-statistics, echo = FALSE, message = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plant species
 final_project_culturing_V2 %>%
