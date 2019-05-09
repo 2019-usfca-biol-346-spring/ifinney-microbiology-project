@@ -104,7 +104,7 @@ final_project_culturing_counts <- read.csv(
   paste0("data/raw_data/",
         "final_project_culturing_counts.csv"))
 
-final_project_culturing_V2 <- read.csv
+final_project_culturing_V2 <- read.csv(
   paste0("data/raw_data/",
         "final_project_culturing_V2.csv"))
 ```
