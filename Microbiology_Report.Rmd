@@ -1,14 +1,14 @@
 ---
 title: '*Pseudomonas* species and *Bacillus* species dominate the phyllosphere of fern leaf yarrows (*Achillea filipendulina*) and ice plants (*Carpobrotus edulis*) located at the Lone Mountain portion of the University of San Francisco’s Hilltop Campus'
 author: "Isabella Finney"
-date: "May 7, 2019"
+date: "May 9, 2019"
 output: word_document
 csl: american-society-for-microbiology.csl
 bibliography: references.bib
 ---
 
 ```{r setup, include = FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Introduction
@@ -62,6 +62,27 @@ The first thing I investigated was the number of colonies present for each sampl
 ## Detecting Morphotypes
 Because of the differences I observed in colony counts, I decided to investigate whether the sample treatments differed in the number of morphotypes I detected per sample. The average number of morphotypes detected in fern-leaf yarrow plants were larger than the average number found in ice plants (Figure 2; ANOVA, p = 0.03303). One of the morphotypes I detected at the highest frequencies were white, circular, glistening, and raised. One of the rarest morphotypes obtained from the 1x sampling plates was present in the fern-leaf yarrow sample which was taken from the leaf closest to the soil of the plant.
 
+# Discussion
+
+## Culturing
+The focus of my investigation was to determine whether differences in the colonies and morphotypes present on a fern-leaf yarrow plant and ice plant growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. I hypothesized that the fern-leaf yarrow plant would have higher colony counts and morphotype diversity than the ice plant. The result of this experiment suggests that the plant structure and naturalized status allow fern-leaf yarrows to have greater morphology diversity. Although, qualitatively, fern-leaf yarrows exhibited higher colony counts, there was no statistical difference between the mean counts of the two plants. Some limitations and caveats of the study that are important to mention are the weather on my day of collection and the type of media I used for culturing. There were rain showers the night and morning before I collected my samples which could have potentially added or removed microbes and reduced the amount pollinator visits to each plant type. In addition, I used TSA plates to grow the microbes which may have negatively impacted the morphotypes I observed. My observations may be based on only a subset of microorganisms because tryptic soy agar is an ideal media for bacterial growth, not fungi or plant microbes that are very common in plant species. 
+
+Differences in performance among plant species can greatly impact ecosystem function so studying the plant microbiome is important. Invasive plant species, like ice plants, are often able to invade and persist in their environment due to their ability in altering soil chemistry and nutrient cycling through the microbes that accompany them [@vila2011ecological]. This can lead to the decline in species diversity among native and naturalized plants in their respective environment. To try and combat this depletion in resources, native and naturalized plants such as the fern-leaf yarrow may recruit more beneficial microbes that can aid in tolerance or defense from varying environmental stresses. In addition, scientists argue that invasive plants can be released from attack by natural enemies, like fungal and viral pathogens [@mitchell2003release]. This may have contributed to the differences I observed in the number of morphotypes present on each plant species. Understanding the microbial impact of invasive species on native and naturalized plants and their ecosystem can be an effective tool in restoring habitats that have been negatively impacted by introduction these invasive plants.
+
+## Predicting Species based on Microscopy
+The purpose of performing this microscopy analysis was to gain more detailed information about some of the microbial communities present on the leaves of ice plants (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is *Azomonas agilis*, morphotype #2 is *Staphylococcus aureus*, morphotype #3 is an *Acidovorax* spp., morphotype #4 is *Pseudomonas aeruginosa*, morphotype #5 is a *Pseudomonas* spp., morphotype #6 is *Bacillus subtilis*, and morphotype #7 is a *Bacilius* spp. (Table 2). The majority of the morphotypes were gram negative, bacillus shaped bacterium. From all of microbes I analyzed, only the $2^{nd}$ and $3^{rd}$ morphotypes were gram positive. In addition, the only cocci shaped bacteria I noted were morphotypes #1 and #2 (Fig.3, Fig.4). Almost of the predictions I made for the identities of the morphotypes fall under two genera, *Bacillus* and *Pseudomonas*. Both of these genera are found globally, in both plants and mammals. Both genera contain species that can benefit and protect or cause infection to the host. For example, *Pseudomonas aeruginosa* is a naturally occurring bacterium that causes infections in immunocompromised humans acts as a pathogen in plants. In plants, *P. aeruginosa* is an opportunistic pathogen in that it exploits a break in the host defenses to initiate an infection [@todar2012]. Pathogens are harmful in that infections can eventually lead to disease or death in the host.
+
+## Combining Microscopy and Molecular Data
+The phyllosphere presents an opportunity to observe the diverse interactions between plants and bacterial communities. Although the phyllosphere supports great microbial diversity, there is still limited information about the exact microbes that inhabit various plant species. Of the sequences which successfully resulted in valid BLAST results, the two most abundant genera present were *Bacillus* and *Pseudomonas*. *Bacillus* is characterized as being rod-shaped, endospore-forming, and gram-positive. Although it is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. 
+
+The two morphotypes I identified as Bacillus species are morphotype #2 and morphotype #7 (Table 4). The microscopy images obtained contained some anomalies as when compared to its defining characteristics. I categorized morphotype #2 as being gram-positive and cocci-shaped and morphotype #7 as being bacillus and gram-negative. Some *Bacillus* species can be classified as coccobacillus-shaped. In addition, the body sizes of *Bacillus* spp. often range between 0.5-1.0 µm wide by 1.0-4.0 µm long [@turnbull1996]. This accounts for why I initially classified the morphotype as cocci-shaped. Although morphotype #7 does clearly exhibit the bacillus shape, it stained gram-negative. This could be explained by either human error or age. In my process of staining, I possibly may have destained the crystal violet completely off of the slide which would have caused the safranin to completely stain the cells, giving the appearance of a gram-negative bacteria. Another possibility is that although *Bacillus* is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. A 97% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Bacillus spp. are among some of the most globally dispersed bacteria and produce many biological compounds that affect host plants and their interactions with other organisms. For example, *Bacillus substilis* is isolated to produce the biocontrol product Serenade which effective in controlling foliar and soilborne pathways from pathogenic bacteria such as *Pseudomonas* [@bais2004biocontrol]. 
+
+Morphotypes #4 and #5 were identified as having a *Pseudomonas* origin (Table 4). *Pseudomonas* species, under a light microscope, appear as gram-negative and straight or slightly curved rods with sizes ranging from 0.5-1.0 µm wide to 1.5-5.0 µm long [@kumar2011extracellular]. The generalized features of *Pseudomonas* match those that I observed from microscopy as well as predicted in. In addition, a 99% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Further research into the genus yielded interesting information about the interactions between plants and *Pseudomonas* species. Many *Pseudomonas* spp. are considered a pathogens. A pathogen, or infectious agent, is any bacterium or virus that can cause disease or illness. Some *Pseudomonas* spp., like *Pseudomonas syringae*, species can attack and infect plants via different mechanisms. *P. syringae* is able to use its flagella and pili to invade a plant via open wounds, release effector proteins to manipulate the host’s immune response and cause disease, and form biofilms which express virulent genes and produce polysaccharides to create an ideal growth environment. In addition, the bacterium is very effective at causing frost damage in plants via ice nucleation [@chen2000pseudomonas]. Because *P. syringae* has so many different mechanisms of pathogenicity to plants, one may expect that plants would assemble a large immune response against species of *Pseudomonas* but this is not the case. Some species of *Pseudomonas* can actually function to benefit plant growth and protect the host plant against other threats like herbivores. Some studies suggest that *Pseudomonas* can increase plant growth by synthesizing growth hormones, suppressing other microorganisms, and infecting other organisms that attack the host plant. Interestingly, a strain of *Pseudomonas syringae*, *Pseudomonas syringae pv. tomato DC3000* (*Pst DC3000*), has been shown to reduce the body growth of leaf chewing insects while feeding on leaves infected with the strain [@stout1999signal].As a result of this complicated interactions between different *Pseudomonas* spp., plants are tasked with the challenge of trying to recognize with species cause a higher threat to their health versus which ones are beneficial or benign. This most likely explains why *P. syringae*, a destructive pathogen, was found inhabiting the phyllosphere of ice plants  (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). 
+
+## Caveats Regarding Microscopy and Molecular Processing
+Certain limitations and errors presented along the process of the experiment created some challenges. Regarding microcopy, errors in producing stains and resolution were the most likely to impact the data. The staining process requires some experience and patience in order to obtain well-produced slides. Taking more time and continually practicing the staining methods is beneficial to making better predictions about the different morphotypes. Another issue I encountered in identifying the different features of the microbes involved contamination of one of the staining solutions. The Maneval’s stain was completely contaminated with other microbes so it was impossible to observe whether any of the morphotypes I studied contained capsules. In addition, having more information could possibly helped in narrowing down the species for some of the predictions I made and the BLAST sequence results I obtained. Resolution was also a limitation because many bacterial cells can reach the resolution limit of light microscopes. Some ways to resolve this issue is by enhancing the contrast of the imaging system used to obtain images of the morphotypes or using staining the background of the slides with another dye. Another serious issue I encountered in the experiments was processing the molecular data. The reasoning as to why some the original samples didn’t successfully produce valid BLAST results is because each sample had too high of a concentration of inhibitors in the bacteria and some of the samples did not have a high enough concentration of DNA. This resulted in some issues collecting valid BLAST sequences and results.  To correct this error, I performed another round PCR amplification on the initially unsuccessful sequences with a diluted master mix and reextracted DNA depending on the Qubit concentrations. This resolved the issue of having insufficient Blast results after the first round of PCR amplification and sequencing.
+
+## Figures and Tables
 
 ```{r load-packages-and-data}
 # load packages as needed
@@ -77,6 +98,11 @@ colony_data <- read.csv(
   paste0("data/raw_data/",
          "2019-02-05_dilution_plating_colony_and_morphotype_counts ",
          "- Sheet1.csv"))
+
+#Read in csv files for final project with data
+final_project_culturing_counts <- read.csv("data/raw_data/final_project_culturing_counts.csv")
+
+final_project_culturing_V2 <- read.csv("data/raw_data/final_project_culturing_V2.csv")
 ```
 
 ## Culturing Results
@@ -91,7 +117,7 @@ ggplot(aes(x = location_name_or_control,
            fill = location_name_or_control)) +
   geom_boxplot() +
   geom_point() +
-  ggtitle("Count of colonies from different locations, 1x dilution") +
+  ggtitle("Count of Colonies from Different Locations, 1x dilution") +
   xlab("Plant Name") +
   ylab("Number of colonies")
 ```
@@ -122,7 +148,7 @@ ggplot(aes(x = location_name_or_control,
            fill = location_name_or_control)) +
   geom_boxplot() +
   geom_point() +
-  ggtitle("Count of morphotypes from different locations, 1x dilution") +
+  ggtitle("Count of Morphotypes from Different Locations, 1x dilution") +
   xlab("Plant Name") +
   ylab("Number of morphotypes")
 ```
@@ -142,6 +168,8 @@ colony_data %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
 ```
+
+## Microscopy Results
 
 ```{r load-microscopy-data}
 microscopy_data <- read.csv(
@@ -170,8 +198,6 @@ microscopy_data %>%
 ```
 
 **Table 1:** Mean and standard deviation for the length, width, and cell surface area per morphotype analyzed. 
-
-## Microscopy Results
 
 ![](data/images/MOTU_1_Montage.jpg)
 
@@ -233,7 +259,7 @@ microscopy_data %>%
 
 ![](data/images/ML_phylogeny_tree_2.png)
 
-**Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method
+**Figure 11:** Molecular Phylogenetic analysis by Maximum Likelihood method.
 
 | Morphotype ID | Morphotype Identity    | GenBank ID  | Percent Match | Query Cover | E Value |
 |---------------|------------------------|-------------|---------------|-------------|---------|
@@ -246,26 +272,78 @@ microscopy_data %>%
 | 7             | *Bacillus* spp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
 | Negative      | Uncultured bacterium   | GU510538.1  | 82%           | 100.00%     | 5e-09   |
 
-**Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value. 
+**Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
 
-# Discussion
+## Plant Comparison Results
 
-## Culturing
-The focus of my investigation was to determine whether differences in the colonies and morphotypes present on a fern-leaf yarrow plant and ice plant growing on the Lone Mountain portion of the University of San Francisco’s Hilltop Campus. I hypothesized that the fern-leaf yarrow plant would have higher colony counts and morphotype diversity than the ice plant. The result of this experiment suggests that the plant structure and naturalized status allow fern-leaf yarrows to have greater morphology diversity. Although, qualitatively, fern-leaf yarrows exhibited higher colony counts, there was no statistical difference between the mean counts of the two plants. Some limitations and caveats of the study that are important to mention are the weather on my day of collection and the type of media I used for culturing. There were rain showers the night and morning before I collected my samples which could have potentially added or removed microbes and reduced the amount pollinator visits to each plant type. In addition, I used TSA plates to grow the microbes which may have negatively impacted the morphotypes I observed. My observations may be based on only a subset of microorganisms because tryptic soy agar is an ideal media for bacterial growth, not fungi or plant microbes that are very common in plant species. 
+```{r final-colony-counts-histogram}
+#make a histogram of colony counts for final project
+final_project_culturing_counts %>%
+ggplot(aes(x = location_name_or_control,
+           y = number_of_colonies_total,
+           fill = location_name_or_control)) +
+  geom_boxplot() +
+  geom_point() +
+  ggtitle("Count of colonies from Different Plant Species") +
+  xlab("Plant Name") +
+  ylab("Number of colonies")
+```
 
-Differences in performance among plant species can greatly impact ecosystem function so studying the plant microbiome is important. Invasive plant species, like ice plants, are often able to invade and persist in their environment due to their ability in altering soil chemistry and nutrient cycling through the microbes that accompany them [@vila2011ecological]. This can lead to the decline in species diversity among native and naturalized plants in their respective environment. To try and combat this depletion in resources, native and naturalized plants such as the fern-leaf yarrow may recruit more beneficial microbes that can aid in tolerance or defense from varying environmental stresses. In addition, scientists argue that invasive plants can be released from attack by natural enemies, like fungal and viral pathogens [@mitchell2003release]. This may have contributed to the differences I observed in the number of morphotypes present on each plant species. Understanding the microbial impact of invasive species on native and naturalized plants and their ecosystem can be an effective tool in restoring habitats that have been negatively impacted by introduction these invasive plants.
+**Figure 12:** Number of colonies observed per plant species. 
 
-## Predicting Species based on Microscopy
-The purpose of performing this microscopy analysis was to gain more detailed information about some of the microbial communities present on the leaves of ice plants (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). The predictions I made for my selected morphotypes based on the staining results are as follows: morphotype #1 is *Azomonas agilis*, morphotype #2 is *Staphylococcus aureus*, morphotype #3 is an *Acidovorax* spp., morphotype #4 is *Pseudomonas aeruginosa*, morphotype #5 is a *Pseudomonas* spp., morphotype #6 is *Bacillus subtilis*, and morphotype #7 is a *Bacilius* spp. (Table 2). The majority of the morphotypes were gram negative, bacillus shaped bacterium. From all of microbes I analyzed, only the $2^{nd}$ and $3^{rd}$ morphotypes were gram positive. In addition, the only cocci shaped bacteria I noted were morphotypes #1 and #2 (Fig.3, Fig.4). Almost of the predictions I made for the identities of the morphotypes fall under two genera, *Bacillus* and *Pseudomonas*. Both of these genera are found globally, in both plants and mammals. Both genera contain species that can benefit and protect or cause infection to the host. For example, *Pseudomonas aeruginosa* is a naturally occurring bacterium that causes infections in immunocompromised humans acts as a pathogen in plants. In plants, *P. aeruginosa* is an opportunistic pathogen in that it exploits a break in the host defenses to initiate an infection [@todar2012]. Pathogens are harmful in that infections can eventually lead to disease or death in the host.
+```{r final-colony-counts-statistics}
+# Do a statistical test to determine if there are differences
+# in the number of colonies based on plants species
+final_project_culturing_counts %>%
+  lm(number_of_colonies_total ~ location_name_or_control,
+     data = .) %>%
+  anova()
+  broom::tidy() %>%
+  knitr::kable(digits = 2)
+# ANOVA GAVE P=0.02771 -->  STATISTICALLY SIGNIFICANT
+```
 
-## Combining Microscopy and Molecular Data
-The phyllosphere presents an opportunity to observe the diverse interactions between plants and bacterial communities. Although the phyllosphere supports great microbial diversity, there is still limited information about the exact microbes that inhabit various plant species. Of the sequences which successfully resulted in valid BLAST results, the two most abundant genera present were *Bacillus* and *Pseudomonas*. *Bacillus* is characterized as being rod-shaped, endospore-forming, and gram-positive. Although it is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. 
+```{r final-mophology-counts-histogram}
+# make a histogram of morphology counts
+final_project_culturing_V2 %>%
+ggplot(aes(x = location_name_or_control,
+           y = number_of_morphotypes_total,
+           fill = location_name_or_control)) +
+  geom_boxplot() +
+  geom_point() +
+  ggtitle("Count of Morphotypes from Different Locations") +
+  xlab("Plant Name") +
+  ylab("Number of morphotypes")
+```
 
-The two morphotypes I identified as Bacillus species are morphotype #2 and morphotype #7 (Table 4). The microscopy images obtained contained some anomalies as when compared to its defining characteristics. I categorized morphotype #2 as being gram-positive and cocci-shaped and morphotype #7 as being bacillus and gram-negative. Some *Bacillus* species can be classified as coccobacillus-shaped. In addition, the body sizes of *Bacillus* spp. often range between 0.5-1.0 µm wide by 1.0-4.0 µm long [@turnbull1996]. This accounts for why I initially classified the morphotype as cocci-shaped. Although morphotype #7 does clearly exhibit the bacillus shape, it stained gram-negative. This could be explained by either human error or age. In my process of staining, I possibly may have destained the crystal violet completely off of the slide which would have caused the safranin to completely stain the cells, giving the appearance of a gram-negative bacteria. Another possibility is that although *Bacillus* is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. A 97% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Bacillus spp. are among some of the most globally dispersed bacteria and produce many biological compounds that affect host plants and their interactions with other organisms. For example, *Bacillus substilis* is isolated to produce the biocontrol product Serenade which effective in controlling foliar and soilborne pathways from pathogenic bacteria such as *Pseudomonas* [@bais2004biocontrol]. 
+**Figure 13:** Count of different morphotypes present per plant species.
 
-Morphotypes #4 and #5 were identified as having a *Pseudomonas* origin (Table 4). *Pseudomonas* species, under a light microscope, appear as gram-negative and straight or slightly curved rods with sizes ranging from 0.5-1.0 µm wide to 1.5-5.0 µm long [@kumar2011extracellular]. The generalized features of *Pseudomonas* match those that I observed from microscopy as well as predicted in. In addition, a 99% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Further research into the genus yielded interesting information about the interactions between plants and *Pseudomonas* species. Many *Pseudomonas* spp. are considered a pathogens. A pathogen, or infectious agent, is any bacterium or virus that can cause disease or illness. Some *Pseudomonas* spp., like *Pseudomonas syringae*, species can attack and infect plants via different mechanisms. *P. syringae* is able to use its flagella and pili to invade a plant via open wounds, release effector proteins to manipulate the host’s immune response and cause disease, and form biofilms which express virulent genes and produce polysaccharides to create an ideal growth environment. In addition, the bacterium is very effective at causing frost damage in plants via ice nucleation [@chen2000pseudomonas]. Because *P. syringae* has so many different mechanisms of pathogenicity to plants, one may expect that plants would assemble a large immune response against species of *Pseudomonas* but this is not the case. Some species of *Pseudomonas* can actually function to benefit plant growth and protect the host plant against other threats like herbivores. Some studies suggest that *Pseudomonas* can increase plant growth by synthesizing growth hormones, suppressing other microorganisms, and infecting other organisms that attack the host plant. Interestingly, a strain of *Pseudomonas syringae*, *Pseudomonas syringae pv. tomato DC3000* (*Pst DC3000*), has been shown to reduce the body growth of leaf chewing insects while feeding on leaves infected with the strain [@stout1999signal].As a result of this complicated interactions between different *Pseudomonas* spp., plants are tasked with the challenge of trying to recognize with species cause a higher threat to their health versus which ones are beneficial or benign. This most likely explains why *P. syringae*, a destructive pathogen, was found inhabiting the phyllosphere of ice plants  (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). 
+```{r final-morphology-counts-statistics}
+# Do a statistical test to determine if there are differences
+# in the number of morphologies based on plant species
+final_project_culturing_V2 %>%
+  lm(number_of_morphotypes_total ~ location_name_or_control,
+     data = .) %>%
+  anova()
+  broom::tidy() %>%
+  knitr::kable(digits = 2)
+# ANOVA GAVE P = 2.586e-11, --> STATISTICALLY SIGNIFICANT
+```
 
-## Caveats Regarding Microscopy and Molecular Processing
-Certain limitations and errors presented along the process of the experiment created some challenges. Regarding microcopy, errors in producing stains and resolution were the most likely to impact the data. The staining process requires some experience and patience in order to obtain well-produced slides. Taking more time and continually practicing the staining methods is beneficial to making better predictions about the different morphotypes. Another issue I encountered in identifying the different features of the microbes involved contamination of one of the staining solutions. The Maneval’s stain was completely contaminated with other microbes so it was impossible to observe whether any of the morphotypes I studied contained capsules. In addition, having more information could possibly helped in narrowing down the species for some of the predictions I made and the BLAST sequence results I obtained. Resolution was also a limitation because many bacterial cells can reach the resolution limit of light microscopes. Some ways to resolve this issue is by enhancing the contrast of the imaging system used to obtain images of the morphotypes or using staining the background of the slides with another dye. Another serious issue I encountered in the experiments was processing the molecular data. The reasoning as to why some the original samples didn’t successfully produce valid BLAST results is because each sample had too high of a concentration of inhibitors in the bacteria and some of the samples did not have a high enough concentration of DNA. This resulted in some issues collecting valid BLAST sequences and results.  To correct this error, I performed another round PCR amplification on the initially unsuccessful sequences with a diluted master mix and reextracted DNA depending on the Qubit concentrations. This resolved the issue of having insufficient Blast results after the first round of PCR amplification and sequencing.
+![](data/images/gel_images_final.jpg)
+
+**Figure 14:** PCR gel image results for plant species comparison portion of the experiment. The lanes corresponding to each morphotype and negative control are labeled appropriately on the image.
+
+| Morphotype ID | Morphotype Identity    | GenBank ID  | Percent Match | Query Cover | E Value |
+|---------------|------------------------|-------------|---------------|-------------|---------|
+| 1             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
+| 2             | *Pantoea* sp. strain   | MH259986.1  | 86.16%        | 91%         | 2e-125  |
+| 3             | No Good Match          | N/A         | N/A           | N/A         | N/A     |
+| 4             | No Good Match          | N/A         | N/A           | N/A         | N/A     |
+| 5             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
+| 6             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
+| Negative      | No Good Match          | N/A         | N/A           | N/A         | N/A     |
+
+**Table 5:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
 
 # Sources Cited
