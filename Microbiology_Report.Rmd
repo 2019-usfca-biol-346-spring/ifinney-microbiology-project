@@ -75,9 +75,9 @@ The purpose of performing this microscopy analysis was to gain more detailed inf
 ## Combining Microscopy and Molecular Data
 The phyllosphere presents an opportunity to observe the diverse interactions between plants and bacterial communities. Although the phyllosphere supports great microbial diversity, there is still limited information about the exact microbes that inhabit various plant species. Of the sequences which successfully resulted in valid BLAST results, the two most abundant genera present were *Bacillus* and *Pseudomonas*. *Bacillus* is characterized as being rod-shaped, endospore-forming, and gram-positive. Although it is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. 
 
-The two morphotypes I identified as Bacillus species are morphotype #2 and morphotype #7 (Table 4). The microscopy images obtained contained some anomalies as when compared to its defining characteristics. I categorized morphotype #2 as being gram-positive and cocci-shaped and morphotype #7 as being bacillus and gram-negative. Some *Bacillus* species can be classified as coccobacillus-shaped. In addition, the body sizes of *Bacillus* spp. often range between 0.5-1.0 µm wide by 1.0-4.0 µm long [@turnbull1996]. This accounts for why I initially classified the morphotype as cocci-shaped. Although morphotype #7 does clearly exhibit the bacillus shape, it stained gram-negative. This could be explained by either human error or age. In my process of staining, I possibly may have destained the crystal violet completely off of the slide which would have caused the safranin to completely stain the cells, giving the appearance of a gram-negative bacteria. Another possibility is that although *Bacillus* is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. A 97% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Bacillus spp. are among some of the most globally dispersed bacteria and produce many biological compounds that affect host plants and their interactions with other organisms. For example, *Bacillus substilis* is isolated to produce the biocontrol product Serenade which effective in controlling foliar and soilborne pathways from pathogenic bacteria such as *Pseudomonas* [@bais2004biocontrol]. 
+The two morphotypes I identified as Bacillus species are morphotype #2 and morphotype #7 (Table 4). The microscopy images obtained contained some anomalies as when compared to its defining characteristics. I categorized morphotype #2 as being gram-positive and cocci-shaped and morphotype #7 as being bacillus and gram-negative. Some *Bacillus* species can be classified as coccobacillus-shaped. In addition, the body sizes of *Bacillus* spp. often range between 0.5-1.0 µm wide by 1.0-4.0 µm long [@turnbull1996]. This accounts for why I initially classified the morphotype as cocci-shaped. Although morphotype #7 does clearly exhibit the bacillus shape, it stained gram-negative. This could be explained by either human error or age. In my process of staining, I possibly may have destained the crystal violet completely off of the slide which would have caused the safranin to completely stain the cells, giving the appearance of a gram-negative bacteria. Another possibility is that although *Bacillus* is characterized as being gram-positive, some cultures can eventually turn gram-negative with age [@turnbull1996]. A 97% bootstrap support provides further evidence of the morphotypes likely belonging to the same genera (Fig. 11). Bacillus spp. are among some of the most globally dispersed bacteria and produce many biological compounds that affect host plants and their interactions with other organisms. For example, *Bacillus substilis* is isolated to produce the biocontrol product Serenade which can be effective in controlling foliar and soilborne pathways from pathogenic bacteria such as *Pseudomonas* [@bais2004biocontrol]. 
 
-Morphotypes #4 and #5 were identified as having a *Pseudomonas* origin (Table 4). *Pseudomonas* species, under a light microscope, appear as gram-negative and straight or slightly curved rods with sizes ranging from 0.5-1.0 µm wide to 1.5-5.0 µm long [@kumar2011extracellular]. The generalized features of *Pseudomonas* match those that I observed from microscopy as well as predicted in. In addition, a 99% bootstrap support provides further evidence of the morphtypes likely belonging to the same genera (Fig. 11). Further research into the genus yielded interesting information about the interactions between plants and *Pseudomonas* species. Many *Pseudomonas* spp. are considered a pathogens. A pathogen, or infectious agent, is any bacterium or virus that can cause disease or illness. Some *Pseudomonas* spp., like *Pseudomonas syringae*, species can attack and infect plants via different mechanisms. *P. syringae* is able to use its flagella and pili to invade a plant via open wounds, release effector proteins to manipulate the host’s immune response and cause disease, and form biofilms which express virulent genes and produce polysaccharides to create an ideal growth environment. In addition, the bacterium is very effective at causing frost damage in plants via ice nucleation [@chen2000pseudomonas]. Because *P. syringae* has so many different mechanisms of pathogenicity to plants, one may expect that plants would assemble a large immune response against species of *Pseudomonas* but this is not the case. Some species of *Pseudomonas* can actually function to benefit plant growth and protect the host plant against other threats like herbivores. Some studies suggest that *Pseudomonas* can increase plant growth by synthesizing growth hormones, suppressing other microorganisms, and infecting other organisms that attack the host plant. Interestingly, a strain of *Pseudomonas syringae*, *Pseudomonas syringae pv. tomato DC3000* (*Pst DC3000*), has been shown to reduce the body growth of leaf chewing insects while feeding on leaves infected with the strain [@stout1999signal].As a result of this complicated interactions between different *Pseudomonas* spp., plants are tasked with the challenge of trying to recognize with species cause a higher threat to their health versus which ones are beneficial or benign. This most likely explains why *P. syringae*, a destructive pathogen, was found inhabiting the phyllosphere of ice plants  (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). 
+Morphotypes #4 and #5 were identified as having a *Pseudomonas* origin (Table 4). *Pseudomonas* species, under a light microscope, appear as gram-negative and straight or slightly curved rods with sizes ranging from 0.5-1.0 µm wide to 1.5-5.0 µm long [@kumar2011extracellular]. The generalized features of *Pseudomonas* match those that I observed from microscopy as well as predicted in. In addition, a 99% bootstrap support provides further evidence of the morphotypes likely belonging to the same genera (Fig. 11). Further research into the genus yielded interesting information about the interactions between plants and *Pseudomonas* species. Many *Pseudomonas* spp. are considered a pathogens. A pathogen, or infectious agent, is any bacterium or virus that can cause disease or illness. Some *Pseudomonas* spp., like *Pseudomonas syringae*, species can attack and infect plants via different mechanisms. *P. syringae* is able to use its flagella and pili to invade a plant via open wounds, release effector proteins to manipulate the host’s immune response and cause disease, and form biofilms which express virulent genes and produce polysaccharides to create an ideal growth environment. In addition, the bacterium is very effective at causing frost damage in plants via ice nucleation [@chen2000pseudomonas]. Because *P. syringae* has so many different mechanisms of pathogenicity to plants, one may expect that plants would assemble a large immune response against species of *Pseudomonas* but this is not the case. Some species of *Pseudomonas* can actually function to benefit plant growth and protect the host plant against other threats like herbivores. Some studies suggest that *Pseudomonas* can increase plant growth by synthesizing growth hormones, suppressing other microorganisms, and infecting other organisms that attack the host plant. Interestingly, a strain of *Pseudomonas syringae*, *Pseudomonas syringae pv. tomato DC3000* (*Pst DC3000*), has been shown to reduce the body growth of leaf chewing insects while feeding on leaves infected with the strain [@stout1999signal]. As a result of this complicated interactions between different *Pseudomonas* spp., plants are tasked with the challenge of trying to recognize with species cause a higher threat to their health versus which ones are beneficial or benign. This most likely explains why *P. syringae*, a destructive pathogen, was found inhabiting the phyllosphere of ice plants  (*C. edulis*) and fern-leaf yarrows (*A. filipendulina*). 
 
 ## Caveats Regarding Microscopy and Molecular Processing
 Certain limitations and errors presented along the process of the experiment created some challenges. Regarding microcopy, errors in producing stains and resolution were the most likely to impact the data. The staining process requires some experience and patience in order to obtain well-produced slides. Taking more time and continually practicing the staining methods is beneficial to making better predictions about the different morphotypes. Another issue I encountered in identifying the different features of the microbes involved contamination of one of the staining solutions. The Maneval’s stain was completely contaminated with other microbes so it was impossible to observe whether any of the morphotypes I studied contained capsules. In addition, having more information could possibly helped in narrowing down the species for some of the predictions I made and the BLAST sequence results I obtained. Resolution was also a limitation because many bacterial cells can reach the resolution limit of light microscopes. Some ways to resolve this issue is by enhancing the contrast of the imaging system used to obtain images of the morphotypes or using staining the background of the slides with another dye. Another serious issue I encountered in the experiments was processing the molecular data. The reasoning as to why some the original samples didn’t successfully produce valid BLAST results is because each sample had too high of a concentration of inhibitors in the bacteria and some of the samples did not have a high enough concentration of DNA. This resulted in some issues collecting valid BLAST sequences and results.  To correct this error, I performed another round PCR amplification on the initially unsuccessful sequences with a diluted master mix and reextracted DNA depending on the Qubit concentrations. This resolved the issue of having insufficient Blast results after the first round of PCR amplification and sequencing.
@@ -137,7 +137,7 @@ colony_data %>%
   filter(student_name == "Isabella_Finney") %>%
   lm(number_of_colonies_total ~ location_name_or_control,
      data = .) %>%
-  anova()
+  anova() %>%
   broom::tidy() %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P=0.3372--> NOT STATISTICALLY SIGNIFICANT
@@ -168,7 +168,7 @@ colony_data %>%
   filter(student_name == "Isabella_Finney") %>%
   lm(number_of_morphotypes_total ~ location_name_or_control,
      data = .) %>%
-  anova()
+  anova() %>%
   broom::tidy() %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
@@ -284,14 +284,17 @@ microscopy_data %>%
 ```{r final-colony-counts-histogram}
 #make a histogram of colony counts for final project
 final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
 ggplot(aes(x = location_name_or_control,
            y = number_of_colonies_total,
            fill = location_name_or_control)) +
   geom_boxplot() +
-  geom_point() +
   ggtitle("Count of colonies from Different Plant Species") +
   xlab("Plant Name") +
-  ylab("Number of colonies")
+  ylab("Number of colonies") +
+  theme(axis.text.x = element_text(angle = 45,
+                                   hjust = 1))
 ```
 
 **Figure 12:** Number of colonies observed per plant species. 
@@ -300,25 +303,30 @@ ggplot(aes(x = location_name_or_control,
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants species
 final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
   lm(number_of_colonies_total ~ location_name_or_control,
      data = .) %>%
-  anova()
+  anova() %>%
   broom::tidy() %>%
   knitr::kable(digits = 2)
-# ANOVA GAVE P=0.02771 -->  STATISTICALLY SIGNIFICANT
+# ANOVA GAVE P=0.02771 -->  STATISTICALLY SIGNIFICANT 
 ```
 
-```{r final-mophology-counts-histogram}
+```{r final-mophology-counts-boxplot}
 # make a histogram of morphology counts
-final_project_culturing_v2 %>%
-ggplot(aes(x = location_name_or_control,
-           y = number_of_morphotypes_total,
-           fill = location_name_or_control)) +
+final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
+  ggplot(aes(x = location_name_or_control,
+             y = number_of_morphotypes_total,
+             fill = location_name_or_control)) +
   geom_boxplot() +
-  geom_point() +
   ggtitle("Count of Morphotypes from Different Locations") +
   xlab("Plant Name") +
-  ylab("Number of morphotypes")
+  ylab("Number of morphotypes") +
+  theme(axis.text.x = element_text(angle = 45,
+                                   hjust = 1))
 ```
 
 **Figure 13:** Count of different morphotypes present per plant species.
@@ -326,11 +334,29 @@ ggplot(aes(x = location_name_or_control,
 ```{r final-morphology-counts-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plant species
-final_project_culturing_v2 %>%
+final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
   lm(number_of_morphotypes_total ~ location_name_or_control,
      data = .) %>%
-  anova()
+  anova() %>%
   broom::tidy() %>%
+  knitr::kable(digits = 2)
+# ANOVA GAVE P = 2.586e-11, --> STATISTICALLY SIGNIFICANT
+```
+
+```{r final-morphology-pairwise-statistics, echo = FALSE, message = FALSE, warning = FALSE}
+# Do a statistical test to determine if there are differences
+# in the number of morphologies based on plant species
+final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
+  lm(number_of_morphotypes_total ~ location_name_or_control,
+     data = .) %>%
+  aov() %>%
+  TukeyHSD() %>%
+  broom::tidy() %>%
+  select(-term) %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P = 2.586e-11, --> STATISTICALLY SIGNIFICANT
 ```
