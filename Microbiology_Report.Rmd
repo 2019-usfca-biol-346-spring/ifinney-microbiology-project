@@ -99,12 +99,13 @@ colony_data <- read.csv(
          "2019-02-05_dilution_plating_colony_and_morphotype_counts ",
          "- Sheet1.csv"))
 
-#Read in csv files for final project with data
+#Read in csv file for final project with data
 final_project_culturing_counts <- read.csv(
   paste0("data/raw_data/",
         "final_project_culturing_counts.csv"))
 
-final_project_culturing_V2 <- read.csv(
+#Read in csv file for final project with data
+final_project_culturing_v2 <- read.csv(
   paste0("data/raw_data/",
         "final_project_culturing_V2.csv"))
 ```
@@ -128,7 +129,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 1:** Number of colonies per sample treatment and control at 1x dilution.
 
-```{r colony-counts-statistics, echo = FALSE, message = FALSE}
+```{r colony-counts-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants
 colony_data %>%
@@ -159,7 +160,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 2:** Count of different morphotypes present per sample treatment and control at 1x dilution. 
 
-```{r morphology-counts-statistics, echo = FALSE, message = FALSE}
+```{r morphology-counts-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plants
 colony_data %>%
@@ -295,7 +296,7 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 12:** Number of colonies observed per plant species. 
 
-```{r final-colony-counts-statistics, echo = FALSE, message = FALSE}
+```{r final-colony-counts-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of colonies based on plants species
 final_project_culturing_counts %>%
@@ -309,7 +310,7 @@ final_project_culturing_counts %>%
 
 ```{r final-mophology-counts-histogram}
 # make a histogram of morphology counts
-final_project_culturing_V2 %>%
+final_project_culturing_v2 %>%
 ggplot(aes(x = location_name_or_control,
            y = number_of_morphotypes_total,
            fill = location_name_or_control)) +
@@ -322,10 +323,10 @@ ggplot(aes(x = location_name_or_control,
 
 **Figure 13:** Count of different morphotypes present per plant species.
 
-```{r final-morphology-counts-statistics, echo = FALSE, message = FALSE}
+```{r final-morphology-counts-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plant species
-final_project_culturing_V2 %>%
+final_project_culturing_v2 %>%
   lm(number_of_morphotypes_total ~ location_name_or_control,
      data = .) %>%
   anova()
