@@ -112,8 +112,8 @@ final_project_culturing_v2 <- read.csv(
 
 ## Culturing Results
 
-```{r colony-counts-histogram}
-#make a histogram of colony counts
+```{r colony-counts-boxplot}
+#make a boxplot of colony counts
 colony_data %>%
   filter(dilution_1_10_100 == 1) %>%
   filter(student_name == "Isabella_Finney") %>%
@@ -142,6 +142,8 @@ colony_data %>%
   knitr::kable(digits = 2)
 # ANOVA GAVE P=0.3372--> NOT STATISTICALLY SIGNIFICANT
 ```
+
+**Table 1:** Statistical analysis of the number of colonies for sample treatments at 1x dilution. P-value of the number of colony counts is 0.3372.
 
 ```{r mophology-counts-histogram}
 # make a histogram of morphology counts
@@ -174,6 +176,8 @@ colony_data %>%
 # ANOVA GAVE P = 0.03303, --> STATISTICALLY SIGNIFICANT
 ```
 
+**Table 2:** Statistical analysis of the number of morphotypes for sample treatments at 1x dilution. P-value of the number of colony counts is 0.0303.
+
 ## Microscopy Results
 
 ```{r load-microscopy-data}
@@ -202,7 +206,7 @@ microscopy_data %>%
                               "SD cell area (µm^2)"))
 ```
 
-**Table 1:** Mean and standard deviation for the length, width, and cell surface area per morphotype analyzed. 
+**Table 3:** Mean and standard deviation for the length, width, and cell surface area per morphotype analyzed. 
 
 ![](data/images/MOTU_1_Montage.jpg)
 
@@ -242,7 +246,7 @@ microscopy_data %>%
 | 6             | Bacillus | Gram Negative          | No               | N/A            |
 | 7             | Bacillus | Gram Negative          | No               | N/A            |
 
-**Table 2:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
+**Table 4:** Detailed descriptions of cell characteristics for all seven morphotypes studied.
 
 ## Molecular Results
 
@@ -260,7 +264,7 @@ microscopy_data %>%
 | 6             | 0 ng/μL                         |
 | 7             | 1.69 ng/μL                      |
 
-**Table 3:** Qubit DNA concentration results for each morphotype tested.
+**Table 5:** Qubit DNA concentration results for each morphotype tested.
 
 ![](data/images/ML_phylogeny_tree_2.png)
 
@@ -277,11 +281,11 @@ microscopy_data %>%
 | 7             | *Bacillus* sp.        | FJ555568.1  | 82%           | 89.86%      | 9e-138  |
 | Negative      | Uncultured bacterium   | GU510538.1  | 82%           | 100.00%     | 5e-09   |
 
-**Table 4:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
+**Table 6:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
 
 ## Part 2:Plant Species Comparison Results
 
-```{r final-colony-counts-histogram}
+```{r final-colony-counts-boxplot}
 #make a histogram of colony counts for final project
 final_project_culturing_counts %>%
   filter(number_of_colonies_total < 500) %>%
@@ -310,10 +314,12 @@ final_project_culturing_counts %>%
   anova() %>%
   broom::tidy() %>%
   knitr::kable(digits = 2)
-# ANOVA GAVE P=0.02771 -->  STATISTICALLY SIGNIFICANT 
+# ANOVA GAVE P= 0 --> NOT STATISTICALLY SIGNIFICANT
 ```
 
-```{r final-mophology-counts-boxplot}
+**Table 7:** Statistical analysis of the number of colonies. P-value of the number of colony counts for the different plant species is equal to 0.
+
+```{r final-morphology-counts-boxplot}
 # make a histogram of morphology counts
 final_project_culturing_counts %>%
   filter(number_of_colonies_total < 500) %>%
@@ -342,8 +348,10 @@ final_project_culturing_counts %>%
   anova() %>%
   broom::tidy() %>%
   knitr::kable(digits = 2)
-# ANOVA GAVE P = 2.586e-11, --> STATISTICALLY SIGNIFICANT
+# ANOVA GAVE P = 0, --> NOT STATISTICALLY SIGNIFICANT
 ```
+
+**Table 8:** Statistical analysis of the number of morphotypes. P-value of the morphotype counts for the different plant species is equal to 0.
 
 ```{r final-morphology-pairwise-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
@@ -358,7 +366,6 @@ final_project_culturing_counts %>%
   broom::tidy() %>%
   select(-term) %>%
   knitr::kable(digits = 2)
-# ANOVA GAVE P = 2.586e-11, --> STATISTICALLY SIGNIFICANT
 ```
 
 ![](data/images/gel_images_final.jpg)
@@ -375,6 +382,6 @@ final_project_culturing_counts %>%
 | 6             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
 | Negative      | No Good Match          | N/A         | N/A           | N/A         | N/A     |
 
-**Table 5:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
+**Table 9:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
 
 # Sources Cited
