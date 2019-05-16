@@ -103,11 +103,6 @@ colony_data <- read.csv(
 final_project_culturing_counts <- read.csv(
   paste0("data/raw_data/",
         "final_project_culturing_counts.csv"))
-
-#Read in csv file for final project with data
-final_project_culturing_v2 <- read.csv(
-  paste0("data/raw_data/",
-        "final_project_culturing_V2.csv"))
 ```
 
 ## Culturing Results
