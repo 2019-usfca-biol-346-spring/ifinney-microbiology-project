@@ -1,7 +1,7 @@
 ---
 title: '*Pseudomonas* spp., *Bacillus* spp., and *Enterobacter* sp., on various plant species located at the Lone Mountain portion of the University of San Francisco’s Hilltop Campus'
 author: "Isabella Finney"
-date: "May 9, 2019"
+date: "May 16, 2019"
 output: word_document
 csl: american-society-for-microbiology.csl
 bibliography: references.bib
@@ -353,6 +353,23 @@ final_project_culturing_counts %>%
 
 **Table 8:** Statistical analysis of the number of morphotypes. P-value of the morphotype counts for the different plant species is equal to 0.
 
+```{r final-colony-pairwise-statistics, echo = FALSE, message = FALSE, warning = FALSE}
+# Do a statistical test to determine if there are differences
+# in the number of colonies based on plant species
+final_project_culturing_counts %>%
+  filter(number_of_colonies_total < 500) %>%
+  filter(individual_plant_number != "control") %>%
+  lm(number_of_colonies_total ~ location_name_or_control,
+     data = .) %>%
+  aov() %>%
+  TukeyHSD() %>%
+  broom::tidy() %>%
+  select(-term) %>%
+  knitr::kable(digits = 2)
+```
+
+**Table 9:** Pairwise comparisons of the number of colony counts based on the different plant species.
+
 ```{r final-morphology-pairwise-statistics, echo = FALSE, message = FALSE, warning = FALSE}
 # Do a statistical test to determine if there are differences
 # in the number of morphologies based on plant species
@@ -368,6 +385,8 @@ final_project_culturing_counts %>%
   knitr::kable(digits = 2)
 ```
 
+**Table 10:** **Table 9:** Pairwise comparisons of the number of morphology counts based on the different plant species.
+
 ![](data/images/gel_images_final.jpg)
 
 **Figure 14:** PCR gel image results for plant species comparison portion of the experiment. The lanes corresponding to each morphotype and negative control are labeled appropriately on the image.
@@ -382,6 +401,6 @@ final_project_culturing_counts %>%
 | 6             | Sequence Failed        | N/A         | N/A           | N/A         | N/A     |
 | Negative      | No Good Match          | N/A         | N/A           | N/A         | N/A     |
 
-**Table 9:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
+**Table 11:** Morphotype identities from BLAST sequence results with accompaning GenBank ID, percent match, query cover, and e value.
 
 # Sources Cited
