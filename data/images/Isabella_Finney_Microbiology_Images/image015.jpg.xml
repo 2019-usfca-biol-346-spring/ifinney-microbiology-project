@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImageData>
+  <Annotation>
+    <LineColour>65535</LineColour>
+    <LineWidth>3</LineWidth>
+    <ShowLine>False</ShowLine>
+  </Annotation>
+  <ImageCalibration OnePixel="1" unit="Pixels" Magnification="" />
+  <ImageInformation>
+    <ImageDescription>Isabella Finney, Morphotype #6</ImageDescription>
+    <ImageNotes />
+    <Time>4:00 PM</Time>
+    <ImageName>image015</ImageName>
+    <Date>2/28/2019</Date>
+  </ImageInformation>
+</ImageData>
