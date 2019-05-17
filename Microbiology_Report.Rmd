@@ -1,5 +1,5 @@
 ---
-title: '*Pseudomonas* spp., *Bacillus* spp., and *Pantoea* sp., on various plant species located at the Lone Mountain portion of the University of San Francisco’s Hilltop Campus'
+title: '*Pseudomonas* spp., *Bacillus* spp., and *Pantoea* sp. on various plant species located at the Lone Mountain portion of the University of San Francisco’s Hilltop Campus'
 author: "Isabella Finney"
 date: "May 16, 2019"
 output: word_document
