@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ImageData>
+  <Annotation>
+    <LineColour>65535</LineColour>
+    <LineWidth>3</LineWidth>
+    <ShowLine>False</ShowLine>
+    <ScaleBarLengthMode>default</ScaleBarLengthMode>
+    <ScaleBarUserDefLength>50</ScaleBarUserDefLength>
+    <AnnotationHidden>no</AnnotationHidden>
+    <LineDrawMode>LineOnly</LineDrawMode>
+    <ArrowLabelText>
+    </ArrowLabelText>
+  </Annotation>
+  <ImageCalibration OnePixel="1" unit="Pixels" Magnification="" />
+  <ImageInformation>
+    <ImageDescription>Isabella Finney, Microbiology, Morphotype #1</ImageDescription>
+    <ImageNotes />
+    <Time>2:52 PM</Time>
+    <ImageName>image006</ImageName>
+    <Date>2/28/2019</Date>
+  </ImageInformation>
+</ImageData>
